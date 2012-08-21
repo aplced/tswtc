@@ -1,6 +1,6 @@
 package TSWTalismans;
 
-public enum TalismanSlot 
+public enum TalismanSlot
 {
 	Head,
 	Finger,
@@ -9,6 +9,5 @@ public enum TalismanSlot
 	Luck,
 	Waist,
 	Occult,
-	Weapon1,
-	Weapon2
+	Weapon
 }

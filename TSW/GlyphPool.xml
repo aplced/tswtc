@@ -11,5 +11,15 @@
     </void> 
    </object> 
   </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.GlyphXMLS"> 
+    <void property="critRating"> 
+     <int>300</int> 
+    </void> 
+    <void property="name"> 
+     <string>GlyphMCrit</string> 
+    </void> 
+   </object> 
+  </void> 
  </object> 
 </java> 

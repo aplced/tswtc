@@ -29,8 +29,7 @@ public class TalismanBuildUIContainer
 	final int LUCK = 0;
 	final int WAIST = 1;
 	final int OCCULT = 2;
-	final int WEAPON1 = 0;
-	final int WEAPON2 = 1;
+	final int WEAPON = 0;
 
 	public TalismanPool talismanPool;
 	public GlyphPool glyphPool;
@@ -43,7 +42,7 @@ public class TalismanBuildUIContainer
 	public JComboBox[] headSelection = new JComboBox[1];
 	public JComboBox[] majorSelection = new JComboBox[3];
 	public JComboBox[] minorSelection = new JComboBox[3];
-	public JComboBox[] weaponSelection = new JComboBox[2];
+	public JComboBox[] weaponSelection = new JComboBox[1];
 
 	public JLabel[] headDisplay = new JLabel[1];
 	public JLabel[] majorDisplay = new JLabel[3];
@@ -81,7 +80,7 @@ public class TalismanBuildUIContainer
 		CreateTalismanSelectionComboBoxes(headSelection, 1);
 		CreateTalismanSelectionComboBoxes(majorSelection, 3);
 		CreateTalismanSelectionComboBoxes(minorSelection, 3);
-		CreateTalismanSelectionComboBoxes(weaponSelection, 2);
+		CreateTalismanSelectionComboBoxes(weaponSelection, 1);
 
 		CreateTalismanDisplayLabels(headDisplay, 1);
 		CreateTalismanDisplayLabels(majorDisplay, 3);
@@ -98,8 +97,7 @@ public class TalismanBuildUIContainer
 		RefreshTalismanSlot(TalismanSlot.Luck);
 		RefreshTalismanSlot(TalismanSlot.Waist);
 		RefreshTalismanSlot(TalismanSlot.Occult);
-		RefreshTalismanSlot(TalismanSlot.Weapon1);
-		RefreshTalismanSlot(TalismanSlot.Weapon2);
+		RefreshTalismanSlot(TalismanSlot.Weapon);
 
 		RefreshCommitedBuildDisplay();
 	}
@@ -191,11 +189,8 @@ public class TalismanBuildUIContainer
 				case Occult:
 					minorDisplay[OCCULT].setText(talisman.Name);
 					break;
-				case Weapon1:
-					weaponDisplay[WEAPON1].setText(talisman.Name);
-					break;
-				case Weapon2:
-					weaponDisplay[WEAPON2].setText(talisman.Name);
+				case Weapon:
+					weaponDisplay[WEAPON].setText(talisman.Name);
 					break;
 				}
 			}
@@ -297,11 +292,8 @@ public class TalismanBuildUIContainer
 		case Occult:
 			RefreshTalismanComboBoxValues(minorSelection[OCCULT], allTalismans);
 			break;
-		case Weapon1:
-			RefreshTalismanComboBoxValues(weaponSelection[WEAPON1], allTalismans);
-			break;
-		case Weapon2:
-			RefreshTalismanComboBoxValues(weaponSelection[WEAPON2], allTalismans);
+		case Weapon:
+			RefreshTalismanComboBoxValues(weaponSelection[WEAPON], allTalismans);
 			break;
 		}
 	}

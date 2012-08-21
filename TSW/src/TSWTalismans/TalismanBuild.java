@@ -171,9 +171,27 @@ public class TalismanBuild
 		healPower = Math.round(hp*10)/10f;
 	}
 
+	final double CC_BASE = 5;
+	final int CC_DR = 750;
+
+	final double CC_A = 0.0206;
+
+	private double CritChanceLinearCalc(int x)
+	{
+		if(x > CC_DR)
+		{
+			return CC_A*CC_DR + CC_A*((x - CC_DR)/2) + CC_BASE;
+		}
+		else
+		{
+			return CC_A*x + CC_BASE;
+		}
+	}
+
 	private void CalculateCritChance()
 	{
-		critChance = 5;
+		double cc = CritChanceLinearCalc(critRating);
+		critChance = Math.round(cc*10)/10f;
 	}
 
 	private void CalculateCritPowerMultiplier()

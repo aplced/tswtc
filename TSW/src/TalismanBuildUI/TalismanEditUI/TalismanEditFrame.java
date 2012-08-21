@@ -56,8 +56,7 @@ public class TalismanEditFrame extends JFrame
 		typeJCbx.addItem(TalismanSlot.Luck);
 		typeJCbx.addItem(TalismanSlot.Waist);
 		typeJCbx.addItem(TalismanSlot.Occult);
-		typeJCbx.addItem(TalismanSlot.Weapon1);
-		typeJCbx.addItem(TalismanSlot.Weapon2);
+		typeJCbx.addItem(TalismanSlot.Weapon);
 
 		typeJCbx.setSelectedIndex(0);
 		nameJTxt.setText("Talisman");

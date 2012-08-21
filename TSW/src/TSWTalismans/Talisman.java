@@ -80,8 +80,7 @@ public class Talisman
 		case Occult:
 			//multiplier = 0.10;
 			break;
-		case Weapon1:
-		case Weapon2:
+		case Weapon:
 			//multiplier = 0.10;
 			break;
 		}
@@ -124,12 +123,12 @@ public class Talisman
 	{
 		attackRating = iAttackRating;
 	}
-	
+
 	public int GetWeaponPower()
 	{
 		return (int)(weaponPower*multiplier);
 	}
-	
+
 	public void SetWeaponPower(int iWeaponPower)
 	{
 		weaponPower = iWeaponPower;
@@ -154,17 +153,17 @@ public class Talisman
 	{
 		return (int)(slottedGlyph.EvadeRating*multiplier);
 	}
-	
+
 	public int GetDefenceRating()
 	{
 		return (int)(slottedGlyph.DefenceRating*multiplier);
 	}
-	
+
 	public int GetMagicalProtection()
 	{
 		return (int)(slottedGlyph.MagicalProtection*multiplier);
 	}
-	
+
 	public int GetPhysicalProtection()
 	{
 		return (int)(slottedGlyph.PhysicalProtection*multiplier);
@@ -184,7 +183,7 @@ public class Talisman
 	{
 		return (int)(slottedGlyph.PenetrationRating*multiplier);
 	}
-	
+
 	public int GetHitRating()
 	{
 		return (int)(slottedGlyph.HitRating*multiplier);
