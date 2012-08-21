@@ -9,26 +9,26 @@ public class TalismanBuild
 
 	private HashMap<TalismanSlot, Talisman> buildTalismans = new HashMap<TalismanSlot, Talisman>();
 
-	private int combatPower = 0;
-	private int healPower = 0;
+	private double combatPower = 0;
+	private double healPower = 0;
 	private int weaponPower = 0;
 	private int health = 0;
 	private int attackRating = 0;
 	private int critRating = 0;
-	private int critChance = 0;
+	private double critChance = 0;
 	private int critPower = 0;
-	private int critPowerMultiplier = 0;
+	private double critPowerMultiplier = 0;
 	private int penetrationRating = 0;
 	private int hitRating = 0;
 	private int healRating = 0;
 	private int evadeRating = 0;
-	private int evadeChance = 0;
+	private double evadeChance = 0;
 	private int blockRating = 0;
 	private int defenceRating = 0;
 	private int magicalProtection = 0;
 	private int physicalProtection = 0;
-	private int enemyEvadeChance = 0;
-	private int enemyCritChance = 0;
+	private double enemyEvadeChance = 0;
+	private double enemyCritChance = 0;
 
 
 	public boolean SetTalisman(Talisman iTalisman)
@@ -138,6 +138,50 @@ public class TalismanBuild
 			magicalProtection += buildTalisman.GetMagicalProtection();
 			physicalProtection += buildTalisman.GetPhysicalProtection();
 		}
+
+		CalculateCombatPower();
+		CalculateHealPower();
+		CalculateCritChance();
+		CalculateCritPowerMultiplier();
+		CalculateEvadeChance();
+	}
+
+	final double CP_BASE = 75;
+	final double WP_DIV = 5;
+
+	final double CA = -0.000000001482;
+	final double CB =  0.0000329;
+	final double CC = -0.0024;
+	final double CD = 700.29;
+
+	private double CubicPowerCalc(double x)
+	{
+		return CA*(x*x*x) + CB*(x*x) + CC*x + CD;
+	}
+
+	private void CalculateCombatPower()
+	{
+		combatPower = (CP_BASE + weaponPower/5)*(1 + attackRating/CubicPowerCalc(attackRating));
+	}
+
+	private void CalculateHealPower()
+	{
+		healPower = (CP_BASE + weaponPower/5)*(1 + healRating/CubicPowerCalc(healRating));
+	}
+
+	private void CalculateCritChance()
+	{
+		critChance = 5;
+	}
+
+	private void CalculateCritPowerMultiplier()
+	{
+		critPowerMultiplier = 25;
+	}
+
+	private void CalculateEvadeChance()
+	{
+		evadeChance = 5;
 	}
 
 	public int GetHealth()
@@ -205,37 +249,37 @@ public class TalismanBuild
 		return physicalProtection;
 	}
 
-	public int GetCombatPower()
+	public double GetCombatPower()
 	{
 		return combatPower;
 	}
 
-	public int GetHealPower()
+	public double GetHealPower()
 	{
 		return healPower;
 	}
 
-	public int GetCritChance()
+	public double GetCritChance()
 	{
 		return critChance;
 	}
 
-	public int GetCritPowerMultiplier()
+	public double GetCritPowerMultiplier()
 	{
 		return critPowerMultiplier;
 	}
 
-	public int GetEvadeChance()
+	public double GetEvadeChance()
 	{
 		return evadeChance;
 	}
 
-	public int GetEnemyEvadeChance()
+	public double GetEnemyEvadeChance()
 	{
 		return enemyEvadeChance;
 	}
 
-	public int GetEnemyCritRating()
+	public double GetEnemyCritRating()
 	{
 		return enemyCritChance;
 	}

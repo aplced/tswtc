@@ -147,6 +147,19 @@ public class TalismanBuildUIContainer
 		comp.setText(tmp);
 	}
 
+	private void UpdateComparrissonComponent(JLabel comp, double commitedVal, double crntVal)
+	{
+		String tmp = "";
+		tmp += commitedVal;
+		double dif = crntVal - commitedVal;
+		if(dif > 0)
+			tmp += " (+" + dif + ")";
+		else if (dif < 0)
+			tmp += " (" + dif + ")";
+
+		comp.setText(tmp);
+	}
+
 	private void RefreshCommitedBuildDisplay()
 	{
 		if(committedBuild != null)
