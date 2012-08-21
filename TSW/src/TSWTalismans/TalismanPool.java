@@ -32,6 +32,7 @@ public class TalismanPool
 		return (ArrayList<Talisman>) talismanPool.clone();
 	}
 
+	@SuppressWarnings("unchecked")
 	public void LoadFromFile()
 	{
 		ArrayList<TalismanXMLS> serializableTalismans;

@@ -32,6 +32,7 @@ public class GlyphPool
 		return (ArrayList<Glyph>) glyphPool.clone();
 	}
 
+	@SuppressWarnings("unchecked")
 	public void LoadFromFile()
 	{
 		ArrayList<GlyphXMLS> serializableGlyphs;

@@ -13,6 +13,7 @@ import TSWTalismans.TalismanSlot;
 import TalismanBuildUI.TalismanBuildUIContainer;
 import TalismanBuildUI.TalismanEditUI.ActionListeners.CreateTalismanDoneListener;
 
+@SuppressWarnings("serial")
 public class TalismanEditFrame extends JFrame
 {
 	private JComboBox typeJCbx = new JComboBox();
@@ -113,7 +114,7 @@ public class TalismanEditFrame extends JFrame
 	{
 		return Integer.parseInt(attackRatingJTxt.getText());
 	}
-	
+
 	public int GetWeaponPower()
 	{
 		return Integer.parseInt(weaponPowerJTxt.getText());

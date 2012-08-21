@@ -10,6 +10,7 @@ import javax.swing.JTextField;
 import TalismanBuildUI.TalismanBuildUIContainer;
 import TalismanBuildUI.GlpyhEditUI.ActionListeners.CreateGlyphDoneListener;
 
+@SuppressWarnings("serial")
 public class GlyphEditFrame extends JFrame
 {
 	private JTextField nameJTxt = new JTextField(10);
@@ -98,17 +99,17 @@ public class GlyphEditFrame extends JFrame
 	{
 		return Integer.parseInt(evadeRatingJTxt.getText());
 	}
-	
+
 	public int GetDefenceRating()
 	{
 		return Integer.parseInt(defenceRatingJTxt.getText());
 	}
-	
+
 	public int GetMagicalProtection()
 	{
 		return Integer.parseInt(magicalProtectionJTxt.getText());
 	}
-	
+
 	public int GetPhysicalProtection()
 	{
 		return Integer.parseInt(physicalProtectionJTxt.getText());
@@ -128,7 +129,7 @@ public class GlyphEditFrame extends JFrame
 	{
 		return Integer.parseInt(penetrationRatingJTxt.getText());
 	}
-	
+
 	public int GetHitRating()
 	{
 		return Integer.parseInt(hitRatingJTxt.getText());

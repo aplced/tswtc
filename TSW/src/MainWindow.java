@@ -1,12 +1,7 @@
 import java.awt.BorderLayout;
-import java.awt.FlowLayout;
-import java.awt.GridLayout;
-import java.awt.Insets;
 
-import javax.swing.BoxLayout;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
 
 import TSWTalismans.GlyphPool;
 import TSWTalismans.TalismanPool;
@@ -16,6 +11,7 @@ import TalismanBuildUI.ButtonPanel.ButtonControlPanelFactory;
 import TalismanBuildUI.CurrnetBuildPanel.TalismanBuildViewPanelFactory;
 import TalismanBuildUI.StatisticsComparisonPanel.TalismanBuildComparissonPanelFactory;
 
+@SuppressWarnings("serial")
 public class MainWindow extends JFrame
 {
 	public static void main(String[] args)
@@ -34,19 +30,13 @@ public class MainWindow extends JFrame
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
 
-		JPanel talismanViewPanel = new JPanel();
-		talismanViewPanel.setLayout(new GridLayout(2, 2));
-
-		talismanViewPanel.add(TalismanBuildCreatePanelFactory.PrepareTalismanBuildPanel(talCb));
-		talismanViewPanel.add(TalismanBuildViewPanelFactory.PrepareTalismanViewPanel(talCb));
-		talismanViewPanel.add(TalismanBuildComparissonPanelFactory.PrepareTalismanComparissonPanel(talCb));
-		talismanViewPanel.setBorder(new EmptyBorder(new Insets(20, 20, 20, 20)));
-
 		JPanel allPanes = new JPanel();
-		allPanes.setLayout(new BoxLayout(allPanes, BoxLayout.Y_AXIS));
+		allPanes.setLayout(new BorderLayout());
 
-		allPanes.add(ButtonControlPanelFactory.PrepareButtonPanel(talCb));
-		allPanes.add(talismanViewPanel);
+		allPanes.add(ButtonControlPanelFactory.PrepareButtonPanel(talCb), BorderLayout.NORTH);
+		allPanes.add(TalismanBuildCreatePanelFactory.PrepareTalismanBuildPanel(talCb), BorderLayout.WEST);
+		allPanes.add(TalismanBuildViewPanelFactory.PrepareTalismanViewPanel(talCb), BorderLayout.EAST);
+		allPanes.add(TalismanBuildComparissonPanelFactory.PrepareTalismanComparissonPanel(talCb), BorderLayout.CENTER);
 
 		setContentPane(allPanes);
 		pack();
