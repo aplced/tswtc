@@ -31,7 +31,7 @@ public class TalismanBuildUIContainer
 	final int OCCULT = 2;
 	final int WEAPON1 = 0;
 	final int WEAPON2 = 1;
-	
+
 	public TalismanPool talismanPool;
 	public GlyphPool glyphPool;
 	TalismanBuild crntBuild;
@@ -50,19 +50,26 @@ public class TalismanBuildUIContainer
 	public JLabel[] minorDisplay = new JLabel[3];
 	public JLabel[] weaponDisplay = new JLabel[2];
 
+	public JLabel compCombatPower = new JLabel();
+	public JLabel compHealPower = new JLabel();
 	public JLabel compWeaponPower = new JLabel();
 	public JLabel compHealth = new JLabel();
 	public JLabel compAttackRating = new JLabel();
 	public JLabel compHealRating = new JLabel();
 	public JLabel compCritRating = new JLabel();
+	public JLabel compCritChance = new JLabel();
 	public JLabel compCritPower = new JLabel();
+	public JLabel compCritPowerMultiplier = new JLabel();
 	public JLabel compPenetrationRating = new JLabel();
 	public JLabel compHitRating = new JLabel();
 	public JLabel compBlockRating = new JLabel();
 	public JLabel compEvadeRating = new JLabel();
+	public JLabel compEvadeChance = new JLabel();
 	public JLabel compDefenceRating = new JLabel();
 	public JLabel compMagicalProtection = new JLabel();
 	public JLabel compPhysicalProtection = new JLabel();
+	public JLabel compEnemyEvadeChance = new JLabel();
+	public JLabel compEnemyCritRating = new JLabel();
 
 	public TalismanBuildUIContainer(TalismanPool iTPool, GlyphPool iGPool)
 	{
@@ -118,6 +125,13 @@ public class TalismanBuildUIContainer
 		UpdateComparrissonComponent(compDefenceRating, build.GetDefenceRating(), crntBuild.GetDefenceRating());
 		UpdateComparrissonComponent(compMagicalProtection, build.GetMagicalProtection(), crntBuild.GetMagicalProtection());
 		UpdateComparrissonComponent(compPhysicalProtection, build.GetPhysicalProtection(), crntBuild.GetPhysicalProtection());
+		UpdateComparrissonComponent(compCombatPower, build.GetCombatPower(), crntBuild.GetCombatPower());
+		UpdateComparrissonComponent(compHealPower, build.GetHealPower(), crntBuild.GetHealPower());
+		UpdateComparrissonComponent(compCritChance, build.GetCritChance(), crntBuild.GetCritChance());
+		UpdateComparrissonComponent(compCritPowerMultiplier, build.GetCritPowerMultiplier(), crntBuild.GetCritPowerMultiplier());
+		UpdateComparrissonComponent(compEvadeChance, build.GetEvadeChance(), crntBuild.GetEvadeChance());
+		UpdateComparrissonComponent(compEnemyEvadeChance, build.GetEnemyEvadeChance(), crntBuild.GetEnemyEvadeChance());
+		UpdateComparrissonComponent(compEnemyCritRating, build.GetEnemyCritRating(), crntBuild.GetEnemyCritRating());
 	}
 
 	private void UpdateComparrissonComponent(JLabel comp, int commitedVal, int crntVal)
@@ -154,7 +168,7 @@ public class TalismanBuildUIContainer
 					break;
 				case Wrist:
 					majorDisplay[WRIST].setText(talisman.Name);
-					break;					
+					break;
 				case Luck:
 					minorDisplay[LUCK].setText(talisman.Name);
 					break;
@@ -260,7 +274,7 @@ public class TalismanBuildUIContainer
 			break;
 		case Wrist:
 			RefreshTalismanComboBoxValues(majorSelection[WRIST], allTalismans);
-			break;			
+			break;
 		case Luck:
 			RefreshTalismanComboBoxValues(minorSelection[LUCK], allTalismans);
 			break;

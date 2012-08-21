@@ -27,11 +27,11 @@ public class TalismanBuildComparissonPanelFactory
 		panel.add(new JLabel("Crit rating"));
 		panel.add(talCb.compCritRating);
 		panel.add(new JLabel("Crit chance:"));
-		panel.add(new JLabel("Crit chance placeholder"));
+		panel.add(talCb.compCritChance);
 		panel.add(new JLabel("Crit power rating"));
 		panel.add(talCb.compCritPower);
 		panel.add(new JLabel("Crit power:"));
-		panel.add(new JLabel("Crit power placeholder"));
+		panel.add(talCb.compCritPowerMultiplier);
 
 		return panel;
 	}
@@ -45,13 +45,13 @@ public class TalismanBuildComparissonPanelFactory
 		panel.add(new JLabel());
 
 		panel.add(new JLabel("Combat power:"));
-		panel.add(new JLabel("Combat power placeholder"));
+		panel.add(talCb.compCombatPower);
 		panel.add(new JLabel("Attack rating:"));
 		panel.add(talCb.compAttackRating);
 		panel.add(new JLabel("Hit rating"));
 		panel.add(talCb.compHitRating);
 		panel.add(new JLabel("Enemy evade chance:"));
-		panel.add(new JLabel("Enemy evade chance placeholder"));
+		panel.add(talCb.compEnemyEvadeChance);
 		panel.add(new JLabel("Penetration rating"));
 		panel.add(talCb.compPenetrationRating);
 
@@ -69,7 +69,7 @@ public class TalismanBuildComparissonPanelFactory
 		panel.add(new JLabel("Evade rating"));
 		panel.add(talCb.compEvadeRating);
 		panel.add(new JLabel("Evade chance"));
-		panel.add(new JLabel("Evade chance placeholder"));
+		panel.add(talCb.compEvadeChance);
 		panel.add(new JLabel("Physical protection "));
 		panel.add(talCb.compPhysicalProtection);
 		panel.add(new JLabel("Magical protection"));
@@ -77,7 +77,7 @@ public class TalismanBuildComparissonPanelFactory
 		panel.add(new JLabel("Defence rating"));
 		panel.add(talCb.compDefenceRating);
 		panel.add(new JLabel("Enemy crit rating:"));
-		panel.add(new JLabel("Enemy crit rating placeholder"));
+		panel.add(talCb.compEnemyCritRating);
 		panel.add(new JLabel("Block rating"));
 		panel.add(talCb.compBlockRating);
 
@@ -93,7 +93,7 @@ public class TalismanBuildComparissonPanelFactory
 		panel.add(new JLabel());
 
 		panel.add(new JLabel("Heal power:"));
-		panel.add(new JLabel("Heal power placeholder"));
+		panel.add(talCb.compHealPower);
 		panel.add(new JLabel("Heal rating"));
 		panel.add(talCb.compHealRating);
 

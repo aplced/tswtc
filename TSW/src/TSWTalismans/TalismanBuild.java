@@ -9,19 +9,26 @@ public class TalismanBuild
 
 	private HashMap<TalismanSlot, Talisman> buildTalismans = new HashMap<TalismanSlot, Talisman>();
 
+	private int combatPower = 0;
+	private int healPower = 0;
 	private int weaponPower = 0;
 	private int health = 0;
 	private int attackRating = 0;
 	private int critRating = 0;
+	private int critChance = 0;
 	private int critPower = 0;
+	private int critPowerMultiplier = 0;
 	private int penetrationRating = 0;
 	private int hitRating = 0;
 	private int healRating = 0;
 	private int evadeRating = 0;
+	private int evadeChance = 0;
 	private int blockRating = 0;
 	private int defenceRating = 0;
 	private int magicalProtection = 0;
 	private int physicalProtection = 0;
+	private int enemyEvadeChance = 0;
+	private int enemyCritChance = 0;
 
 
 	public boolean SetTalisman(Talisman iTalisman)
@@ -35,7 +42,7 @@ public class TalismanBuild
 
 		return false;
 	}
-	
+
 	public Talisman GetTalisman(TalismanSlot slot)
 	{
 		return buildTalismans.get(slot);
@@ -63,7 +70,7 @@ public class TalismanBuild
 
 		return false;
 	}
-	
+
 	public boolean RemoveTalisman(TalismanSlot slot)
 	{
 		Talisman removed = buildTalismans.remove(slot);
@@ -72,7 +79,7 @@ public class TalismanBuild
 			CalculateBuildSpecs();
 			return true;
 		}
-		
+
 		return false;
 	}
 
@@ -90,18 +97,25 @@ public class TalismanBuild
 	private void NullifyBuildSpecs()
 	{
 		health = 0;
+		combatPower = 0;
+		healPower = 0;
 		attackRating = 0;
 		weaponPower = 0;
 		healRating = 0;
 		evadeRating = 0;
+		evadeChance = 0;
 		blockRating = 0;
 		critRating = 0;
+		critChance = 0;
 		critPower = 0;
+		critPowerMultiplier = 0;
 		penetrationRating = 0;
 		hitRating = 0;
 		defenceRating = 0;
 		magicalProtection = 0;
 		physicalProtection = 0;
+		enemyEvadeChance = 0;
+		enemyCritChance = 0;
 	}
 
 	private void CalculateBuildSpecs()
@@ -135,7 +149,7 @@ public class TalismanBuild
 	{
 		return attackRating;
 	}
-	
+
 	public int GetWeaponPower()
 	{
 		return weaponPower;
@@ -170,25 +184,60 @@ public class TalismanBuild
 	{
 		return penetrationRating;
 	}
-	
+
 	public int GetHitRating()
 	{
 		return hitRating;
 	}
-	
+
 	public int GetDefenceRating()
 	{
 		return defenceRating;
 	}
-	
+
 	public int GetMagicalProtection()
 	{
 		return magicalProtection;
 	}
-	
+
 	public int GetPhysicalProtection()
 	{
 		return physicalProtection;
+	}
+
+	public int GetCombatPower()
+	{
+		return combatPower;
+	}
+
+	public int GetHealPower()
+	{
+		return healPower;
+	}
+
+	public int GetCritChance()
+	{
+		return critChance;
+	}
+
+	public int GetCritPowerMultiplier()
+	{
+		return critPowerMultiplier;
+	}
+
+	public int GetEvadeChance()
+	{
+		return evadeChance;
+	}
+
+	public int GetEnemyEvadeChance()
+	{
+		return enemyEvadeChance;
+	}
+
+	public int GetEnemyCritRating()
+	{
+		return enemyCritChance;
 	}
 
 	public TalismanBuildXMLS GetSerializable()
