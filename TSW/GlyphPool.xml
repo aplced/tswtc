@@ -1,23 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?> 
-<java version="1.6.0_33" class="java.beans.XMLDecoder"> 
+<java version="1.6.0_24" class="java.beans.XMLDecoder"> 
  <object class="java.util.ArrayList"> 
   <void method="add"> 
    <object class="TSWTalismans.GlyphXMLS"> 
-    <void property="critRating"> 
-     <int>25</int> 
+    <void property="critPower"> 
+     <int>64</int> 
     </void> 
     <void property="name"> 
-     <string>Critical glyph</string> 
+     <string>64 Crit Power</string> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.GlyphXMLS"> 
+    <void property="critPower"> 
+     <int>29</int> 
+    </void> 
+    <void property="critRating"> 
+     <int>33</int> 
+    </void> 
+    <void property="name"> 
+     <string>33CR29CP</string> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.GlyphXMLS"> 
+    <void property="critPower"> 
+     <int>34</int> 
+    </void> 
+    <void property="critRating"> 
+     <int>38</int> 
+    </void> 
+    <void property="name"> 
+     <string>38CR34CP</string> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.GlyphXMLS"> 
+    <void property="name"> 
+     <string>37CR10PR</string> 
     </void> 
    </object> 
   </void> 
   <void method="add"> 
    <object class="TSWTalismans.GlyphXMLS"> 
     <void property="critRating"> 
-     <int>300</int> 
+     <int>71</int> 
     </void> 
     <void property="name"> 
-     <string>GlyphMCrit</string> 
+     <string>71CR</string> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.GlyphXMLS"> 
+    <void property="critRating"> 
+     <int>56</int> 
+    </void> 
+    <void property="name"> 
+     <string>56CR47PR</string> 
+    </void> 
+    <void property="penetrationRating"> 
+     <int>47</int> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.GlyphXMLS"> 
+    <void property="name"> 
+     <string>8CR35CP</string> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.GlyphXMLS"> 
+    <void property="critPower"> 
+     <int>64</int> 
+    </void> 
+    <void property="hitRating"> 
+     <int>20</int> 
+    </void> 
+    <void property="name"> 
+     <string>64CP20HR</string> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.GlyphXMLS"> 
+    <void property="critPower"> 
+     <int>71</int> 
+    </void> 
+    <void property="name"> 
+     <string>71CP</string> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.GlyphXMLS"> 
+    <void property="critPower"> 
+     <int>18</int> 
+    </void> 
+    <void property="hitRating"> 
+     <int>89</int> 
+    </void> 
+    <void property="name"> 
+     <string>18CP89HR</string> 
     </void> 
    </object> 
   </void> 
