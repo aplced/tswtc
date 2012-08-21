@@ -154,6 +154,8 @@ public class TalismanBuild
 	final double RATC_C = -0.0024;
 	final double RATC_D = 700.29;
 
+	//Used formula and estimates from http://forums.thesecretworld.com/showthread.php?p=1361035
+
 	private double RatingCubicPowerCalc(double x)
 	{
 		return RATC_A*(x*x*x) + RATC_B*(x*x) + RATC_C*x + RATC_D;
@@ -175,6 +177,8 @@ public class TalismanBuild
 	final int CC_DR = 750;
 
 	final double CC_A = 0.0206;
+
+	//Used formula and estimates from http://dulfy.net/2012/07/27/fistblood-healing-build/#3
 
 	private double CritChanceLinearCalc(int x)
 	{
