@@ -1,7 +1,10 @@
 package TalismanBuildUI.ButtonPanel;
-import javax.swing.BoxLayout;
+import java.awt.FlowLayout;
+import java.awt.Insets;
+
 import javax.swing.JButton;
 import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
 
 import TalismanBuildUI.TalismanBuildUIContainer;
 import TalismanBuildUI.ButtonPanel.ActionListeners.CreateGlyphBtnListener;
@@ -14,7 +17,7 @@ public class ButtonControlPanelFactory
 	public static JPanel PrepareButtonPanel(TalismanBuildUIContainer talCb)
 	{
 		JPanel panel = new JPanel();
-		panel.setLayout(new BoxLayout(panel, BoxLayout.PAGE_AXIS));
+		panel.setLayout(new FlowLayout());
 
 		JButton saveTalismanPool = new JButton("Save talisman pool");
 		JButton createNewTalisman = new JButton("New weapon/talisman");
@@ -27,6 +30,8 @@ public class ButtonControlPanelFactory
 		panel.add(createNewTalisman);
 		panel.add(createNewGlyph);
 		panel.add(saveTalismanPool);
+
+		panel.setBorder(new EmptyBorder(new Insets(2, 20, 20, 20)));
 
 		return panel;
 	}
