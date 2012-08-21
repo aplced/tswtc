@@ -147,11 +147,11 @@ public class TalismanBuildUIContainer
 		comp.setText(tmp);
 	}
 
-	private void UpdateComparrissonComponent(JLabel comp, double commitedVal, double crntVal)
+	private void UpdateComparrissonComponent(JLabel comp, float commitedVal, float crntVal)
 	{
 		String tmp = "";
 		tmp += commitedVal;
-		double dif = crntVal - commitedVal;
+		float dif = crntVal - commitedVal;
 		if(dif > 0)
 			tmp += " (+" + dif + ")";
 		else if (dif < 0)

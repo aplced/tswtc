@@ -9,7 +9,54 @@
      </void> 
      <void property="slot"> 
       <object class="TSWTalismans.TalismanSlot" method="valueOf"> 
-       <string>Occult</string> 
+       <string>Waist</string> 
+      </object> 
+     </void> 
+     <void property="slottedGlyph"> 
+      <object class="TSWTalismans.GlyphXMLS"> 
+       <void property="critRating"> 
+        <int>25</int> 
+       </void> 
+       <void property="name"> 
+        <string>Critical glyph</string> 
+       </void> 
+      </object> 
+     </void> 
+    </object> 
+   </void> 
+   <void method="add"> 
+    <object class="TSWTalismans.TalismanXMLS"> 
+     <void property="name"> 
+      <string>Primary</string> 
+     </void> 
+     <void property="slot"> 
+      <object class="TSWTalismans.TalismanSlot" method="valueOf"> 
+       <string>Weapon1</string> 
+      </object> 
+     </void> 
+     <void property="slottedGlyph"> 
+      <object class="TSWTalismans.GlyphXMLS"> 
+       <void property="critRating"> 
+        <int>25</int> 
+       </void> 
+       <void property="name"> 
+        <string>Critical glyph</string> 
+       </void> 
+      </object> 
+     </void> 
+     <void property="weaponPower"> 
+      <int>100</int> 
+     </void> 
+    </object> 
+   </void> 
+   <void method="add"> 
+    <object class="TSWTalismans.TalismanXMLS"> 
+     <void property="name"> 
+      <string>Talisman</string> 
+     </void> 
+     <void property="slot"> 
+      <object class="TSWTalismans.TalismanSlot" method="valueOf"> 
+       <string>Luck</string> 
       </object> 
      </void> 
      <void property="slottedGlyph"> 
@@ -31,7 +78,7 @@
      </void> 
      <void property="slot"> 
       <object class="TSWTalismans.TalismanSlot" method="valueOf"> 
-       <string>Waist</string> 
+       <string>Occult</string> 
       </object> 
      </void> 
      <void property="slottedGlyph"> 
@@ -97,7 +144,32 @@
      </void> 
      <void property="slot"> 
       <object class="TSWTalismans.TalismanSlot" method="valueOf"> 
-       <string>Luck</string> 
+       <string>Neck</string> 
+      </object> 
+     </void> 
+     <void property="slottedGlyph"> 
+      <object class="TSWTalismans.GlyphXMLS"> 
+       <void property="critRating"> 
+        <int>25</int> 
+       </void> 
+       <void property="name"> 
+        <string>Critical glyph</string> 
+       </void> 
+      </object> 
+     </void> 
+    </object> 
+   </void> 
+   <void method="add"> 
+    <object class="TSWTalismans.TalismanXMLS"> 
+     <void property="attackRating"> 
+      <int>350</int> 
+     </void> 
+     <void property="name"> 
+      <string>Talisman</string> 
+     </void> 
+     <void property="slot"> 
+      <object class="TSWTalismans.TalismanSlot" method="valueOf"> 
+       <string>Head</string> 
       </object> 
      </void> 
      <void property="slottedGlyph"> 
@@ -120,75 +192,6 @@
      <void property="slot"> 
       <object class="TSWTalismans.TalismanSlot" method="valueOf"> 
        <string>Finger</string> 
-      </object> 
-     </void> 
-     <void property="slottedGlyph"> 
-      <object class="TSWTalismans.GlyphXMLS"> 
-       <void property="critRating"> 
-        <int>25</int> 
-       </void> 
-       <void property="name"> 
-        <string>Critical glyph</string> 
-       </void> 
-      </object> 
-     </void> 
-    </object> 
-   </void> 
-   <void method="add"> 
-    <object class="TSWTalismans.TalismanXMLS"> 
-     <void property="name"> 
-      <string>Primary</string> 
-     </void> 
-     <void property="slot"> 
-      <object class="TSWTalismans.TalismanSlot" method="valueOf"> 
-       <string>Weapon1</string> 
-      </object> 
-     </void> 
-     <void property="slottedGlyph"> 
-      <object class="TSWTalismans.GlyphXMLS"> 
-       <void property="critRating"> 
-        <int>25</int> 
-       </void> 
-       <void property="name"> 
-        <string>Critical glyph</string> 
-       </void> 
-      </object> 
-     </void> 
-     <void property="weaponPower"> 
-      <int>100</int> 
-     </void> 
-    </object> 
-   </void> 
-   <void method="add"> 
-    <object class="TSWTalismans.TalismanXMLS"> 
-     <void property="name"> 
-      <string>Talisman</string> 
-     </void> 
-     <void property="slot"> 
-      <object class="TSWTalismans.TalismanSlot" method="valueOf"> 
-       <string>Neck</string> 
-      </object> 
-     </void> 
-     <void property="slottedGlyph"> 
-      <object class="TSWTalismans.GlyphXMLS"> 
-       <void property="critRating"> 
-        <int>25</int> 
-       </void> 
-       <void property="name"> 
-        <string>Critical glyph</string> 
-       </void> 
-      </object> 
-     </void> 
-    </object> 
-   </void> 
-   <void method="add"> 
-    <object class="TSWTalismans.TalismanXMLS"> 
-     <void property="name"> 
-      <string>Talisman</string> 
-     </void> 
-     <void property="slot"> 
-      <object class="TSWTalismans.TalismanSlot" method="valueOf"> 
-       <string>Head</string> 
       </object> 
      </void> 
      <void property="slottedGlyph"> 

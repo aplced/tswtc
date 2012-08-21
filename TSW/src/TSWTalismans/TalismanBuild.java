@@ -9,26 +9,26 @@ public class TalismanBuild
 
 	private HashMap<TalismanSlot, Talisman> buildTalismans = new HashMap<TalismanSlot, Talisman>();
 
-	private double combatPower = 0;
-	private double healPower = 0;
+	private float combatPower = 0;
+	private float healPower = 0;
 	private int weaponPower = 0;
 	private int health = 0;
 	private int attackRating = 0;
 	private int critRating = 0;
-	private double critChance = 0;
+	private float critChance = 0;
 	private int critPower = 0;
-	private double critPowerMultiplier = 0;
+	private float critPowerMultiplier = 0;
 	private int penetrationRating = 0;
 	private int hitRating = 0;
 	private int healRating = 0;
 	private int evadeRating = 0;
-	private double evadeChance = 0;
+	private float evadeChance = 0;
 	private int blockRating = 0;
 	private int defenceRating = 0;
 	private int magicalProtection = 0;
 	private int physicalProtection = 0;
-	private double enemyEvadeChance = 0;
-	private double enemyCritChance = 0;
+	private float enemyEvadeChance = 0;
+	private float enemyCritChance = 0;
 
 
 	public boolean SetTalisman(Talisman iTalisman)
@@ -149,24 +149,26 @@ public class TalismanBuild
 	final double CP_BASE = 75;
 	final double WP_DIV = 5;
 
-	final double CA = -0.000000001482;
-	final double CB =  0.0000329;
-	final double CC = -0.0024;
-	final double CD = 700.29;
+	final double RATC_A = -0.000000001482;
+	final double RATC_B =  0.0000329;
+	final double RATC_C = -0.0024;
+	final double RATC_D = 700.29;
 
-	private double CubicPowerCalc(double x)
+	private double RatingCubicPowerCalc(double x)
 	{
-		return CA*(x*x*x) + CB*(x*x) + CC*x + CD;
+		return RATC_A*(x*x*x) + RATC_B*(x*x) + RATC_C*x + RATC_D;
 	}
 
 	private void CalculateCombatPower()
 	{
-		combatPower = (CP_BASE + weaponPower/5)*(1 + attackRating/CubicPowerCalc(attackRating));
+		double cp = (CP_BASE + weaponPower/5)*(1 + attackRating/RatingCubicPowerCalc(attackRating));
+		combatPower = Math.round(cp*10)/10f;
 	}
 
 	private void CalculateHealPower()
 	{
-		healPower = (CP_BASE + weaponPower/5)*(1 + healRating/CubicPowerCalc(healRating));
+		double hp = (CP_BASE + weaponPower/5)*(1 + healRating/RatingCubicPowerCalc(healRating));
+		healPower = Math.round(hp*10)/10f;
 	}
 
 	private void CalculateCritChance()
@@ -249,37 +251,37 @@ public class TalismanBuild
 		return physicalProtection;
 	}
 
-	public double GetCombatPower()
+	public float GetCombatPower()
 	{
 		return combatPower;
 	}
 
-	public double GetHealPower()
+	public float GetHealPower()
 	{
 		return healPower;
 	}
 
-	public double GetCritChance()
+	public float GetCritChance()
 	{
 		return critChance;
 	}
 
-	public double GetCritPowerMultiplier()
+	public float GetCritPowerMultiplier()
 	{
 		return critPowerMultiplier;
 	}
 
-	public double GetEvadeChance()
+	public float GetEvadeChance()
 	{
 		return evadeChance;
 	}
 
-	public double GetEnemyEvadeChance()
+	public float GetEnemyEvadeChance()
 	{
 		return enemyEvadeChance;
 	}
 
-	public double GetEnemyCritRating()
+	public float GetEnemyCritRating()
 	{
 		return enemyCritChance;
 	}
