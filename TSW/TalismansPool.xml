@@ -4,88 +4,573 @@
   <void method="add"> 
    <object class="TSWTalismans.TalismanXMLS"> 
     <void property="attackRating"> 
-     <int>271</int> 
+     <int>343</int> 
     </void> 
     <void property="name"> 
-     <string>H1</string> 
+     <string>Enchanted Bracelet QL9 343AR</string> 
     </void> 
     <void property="slot"> 
-     <object class="TSWTalismans.TalismanSlot" method="valueOf"> 
-      <string>Head</string> 
-     </object> 
-    </void> 
-    <void property="slottedGlyph"> 
-     <object class="TSWTalismans.GlyphXMLS"> 
-      <void property="critPower"> 
-       <int>64</int> 
-      </void> 
-      <void property="hitRating"> 
-       <int>20</int> 
-      </void> 
-      <void property="name"> 
-       <string>64CP20HR</string> 
-      </void> 
-     </object> 
-    </void> 
-   </object> 
-  </void> 
-  <void method="add"> 
-   <object class="TSWTalismans.TalismanXMLS"> 
-    <void property="attackRating"> 
-     <int>141</int> 
-    </void> 
-    <void property="health"> 
-     <int>230</int> 
-    </void> 
-    <void property="name"> 
-     <string>F1</string> 
-    </void> 
-    <void property="slot"> 
-     <object class="TSWTalismans.TalismanSlot" method="valueOf"> 
-      <string>Finger</string> 
-     </object> 
-    </void> 
-    <void property="slottedGlyph"> 
-     <object class="TSWTalismans.GlyphXMLS"> 
-      <void property="critPower"> 
-       <int>29</int> 
-      </void> 
-      <void property="critRating"> 
-       <int>33</int> 
-      </void> 
-      <void property="name"> 
-       <string>33CR29CP</string> 
-      </void> 
-     </object> 
-    </void> 
-   </object> 
-  </void> 
-  <void method="add"> 
-   <object class="TSWTalismans.TalismanXMLS"> 
-    <void property="attackRating"> 
-     <int>141</int> 
-    </void> 
-    <void property="health"> 
-     <int>230</int> 
-    </void> 
-    <void property="name"> 
-     <string>WR1</string> 
-    </void> 
-    <void property="slot"> 
-     <object class="TSWTalismans.TalismanSlot" method="valueOf"> 
+     <object id="TalismanSlot0" class="TSWTalismans.TalismanSlot" method="valueOf"> 
       <string>Wrist</string> 
      </object> 
     </void> 
     <void property="slottedGlyph"> 
      <object class="TSWTalismans.GlyphXMLS"> 
-      <void property="critPower"> 
-       <int>29</int> 
+      <void property="name"> 
+       <string>Enchanted Glyph QL9 54DR 56MP</string> 
       </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="health"> 
+     <int>1356</int> 
+    </void> 
+    <void property="name"> 
+     <string>Ruthless Bracer QL9 1356Hp</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot0"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
       <void property="critRating"> 
-       <int>33</int> 
+       <int>32</int> 
+      </void> 
+      <void property="hitRating"> 
+       <int>81</int> 
       </void> 
       <void property="name"> 
-       <string>33CR29CP</string> 
+       <string>Ruthless Glyph QL9 81HR 32CR</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>192</int> 
+    </void> 
+    <void property="health"> 
+     <int>323</int> 
+    </void> 
+    <void property="name"> 
+     <string>Cat&apos;s Eye Bracelet</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot0"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="hitRating"> 
+       <int>78</int> 
+      </void> 
+      <void property="name"> 
+       <string>Cat&apos;s Eye Bracelet Glyph</string> 
+      </void> 
+      <void property="penetrationRating"> 
+       <int>7</int> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>343</int> 
+    </void> 
+    <void property="name"> 
+     <string>Chain of Unchecked Ambittion</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot0"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="critPower"> 
+       <int>129</int> 
+      </void> 
+      <void property="name"> 
+       <string>Chain of Unchecked Ambittion Glyph</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>82</int> 
+    </void> 
+    <void property="health"> 
+     <int>754</int> 
+    </void> 
+    <void property="name"> 
+     <string>Fierce Bracer QL9 754HP 82AR</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot0"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="critRating"> 
+       <int>24</int> 
+      </void> 
+      <void property="name"> 
+       <string>Fierce Glyph QL9 24CR 61PR</string> 
+      </void> 
+      <void property="penetrationRating"> 
+       <int>61</int> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>82</int> 
+    </void> 
+    <void property="health"> 
+     <int>754</int> 
+    </void> 
+    <void property="name"> 
+     <string>Stalwart Bracer QL9 754Hp 82AR</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot0"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="name"> 
+       <string>Stalwart Glyph QL9 82DR</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>75</int> 
+    </void> 
+    <void property="health"> 
+     <int>681</int> 
+    </void> 
+    <void property="name"> 
+     <string>Bronze Bracer</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot0"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="critRating"> 
+       <int>57</int> 
+      </void> 
+      <void property="name"> 
+       <string>Bronze Bracer Glyph</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>175</int> 
+    </void> 
+    <void property="health"> 
+     <int>292</int> 
+    </void> 
+    <void property="name"> 
+     <string>Bracelet QL8 292Hp 175AR</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot0"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="name"> 
+       <string>Empty Glyph</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>214</int> 
+    </void> 
+    <void property="name"> 
+     <string>Wrath</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot0"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="name"> 
+       <string>Empty Glyph</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>123</int> 
+    </void> 
+    <void property="health"> 
+     <int>208</int> 
+    </void> 
+    <void property="name"> 
+     <string>Ouroboros Chain</string> 
+    </void> 
+    <void property="slot"> 
+     <object id="TalismanSlot1" class="TSWTalismans.TalismanSlot" method="valueOf"> 
+      <string>Waist</string> 
+     </object> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="blockRating"> 
+       <int>21</int> 
+      </void> 
+      <void property="name"> 
+       <string>Ouroboros Chain Glyph</string> 
+      </void> 
+      <void property="penetrationRating"> 
+       <int>8</int> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>53</int> 
+    </void> 
+    <void property="health"> 
+     <int>485</int> 
+    </void> 
+    <void property="name"> 
+     <string>Fierce Belt QL9 485Hp 53AR</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot1"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="critRating"> 
+       <int>31</int> 
+      </void> 
+      <void property="name"> 
+       <string>Fierce Glyph QL9 31CR 26PR</string> 
+      </void> 
+      <void property="penetrationRating"> 
+       <int>26</int> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>123</int> 
+    </void> 
+    <void property="health"> 
+     <int>208</int> 
+    </void> 
+    <void property="name"> 
+     <string>Enchanted Chain QL9 208Hp 123AR</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot1"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="name"> 
+       <string>Enchanted Glyph QL9 13DR 38MP</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>53</int> 
+    </void> 
+    <void property="health"> 
+     <int>485</int> 
+    </void> 
+    <void property="name"> 
+     <string>Ardent Belt QL9 485Hp 53AR</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot1"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="blockRating"> 
+       <int>39</int> 
+      </void> 
+      <void property="evadeRating"> 
+       <int>14</int> 
+      </void> 
+      <void property="name"> 
+       <string>Ardent Glyph QL9 39BR 14ER</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>123</int> 
+    </void> 
+    <void property="health"> 
+     <int>208</int> 
+    </void> 
+    <void property="name"> 
+     <string>Resilient Chaint QL9 208Hp 123AR</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot1"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="evadeRating"> 
+       <int>14</int> 
+      </void> 
+      <void property="name"> 
+       <string>Resilient Glyph QL9 39DR 14ER</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="health"> 
+     <int>872</int> 
+    </void> 
+    <void property="name"> 
+     <string>Accurate Belt QL9 872Hp</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot1"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="hitRating"> 
+       <int>70</int> 
+      </void> 
+      <void property="name"> 
+       <string>Accurate Glyph QL9 70HR</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>53</int> 
+    </void> 
+    <void property="health"> 
+     <int>485</int> 
+    </void> 
+    <void property="name"> 
+     <string>Fierce Belt QL9 485Hp 53AR</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot1"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="critRating"> 
+       <int>46</int> 
+      </void> 
+      <void property="name"> 
+       <string>Fierce Glyph QL9 46CR 13PR</string> 
+      </void> 
+      <void property="penetrationRating"> 
+       <int>13</int> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>123</int> 
+    </void> 
+    <void property="health"> 
+     <int>208</int> 
+    </void> 
+    <void property="name"> 
+     <string>Resilient Effigy QL9 208Hp 123AR</string> 
+    </void> 
+    <void property="slot"> 
+     <object id="TalismanSlot2" class="TSWTalismans.TalismanSlot" method="valueOf"> 
+      <string>Occult</string> 
+     </object> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="evadeRating"> 
+       <int>14</int> 
+      </void> 
+      <void property="name"> 
+       <string>Resilient Glyph QL9 39DR 14ER</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>53</int> 
+    </void> 
+    <void property="health"> 
+     <int>485</int> 
+    </void> 
+    <void property="name"> 
+     <string>Black Jackl&apos;s Bone</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot2"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="name"> 
+       <string>Black Jackl&apos;s Bone Glyph</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>123</int> 
+    </void> 
+    <void property="health"> 
+     <int>208</int> 
+    </void> 
+    <void property="name"> 
+     <string>Fierce Effigy QL9 208Hp 123AR</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot2"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="critRating"> 
+       <int>46</int> 
+      </void> 
+      <void property="name"> 
+       <string>Fierce Glyph QL9 46CR 13PR</string> 
+      </void> 
+      <void property="penetrationRating"> 
+       <int>13</int> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>112</int> 
+    </void> 
+    <void property="health"> 
+     <int>188</int> 
+    </void> 
+    <void property="name"> 
+     <string>Ardent Effigy QL8 188Hp 112AR</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot2"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="blockRating"> 
+       <int>23</int> 
+      </void> 
+      <void property="evadeRating"> 
+       <int>26</int> 
+      </void> 
+      <void property="name"> 
+       <string>Ardent Glyph QL8 23BR 26ER</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>112</int> 
+    </void> 
+    <void property="health"> 
+     <int>188</int> 
+    </void> 
+    <void property="name"> 
+     <string>Apep</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot2"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="hitRating"> 
+       <int>38</int> 
+      </void> 
+      <void property="name"> 
+       <string>Apep Glyph</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="healRating"> 
+     <int>112</int> 
+    </void> 
+    <void property="health"> 
+     <int>188</int> 
+    </void> 
+    <void property="name"> 
+     <string>Fierce Charm QL8 188Hp 112HR</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot2"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="critRating"> 
+       <int>28</int> 
+      </void> 
+      <void property="name"> 
+       <string>Fierce Glyph QL8 28CR 23PR</string> 
+      </void> 
+      <void property="penetrationRating"> 
+       <int>23</int> 
       </void> 
      </object> 
     </void> 
@@ -100,17 +585,1020 @@
      <int>168</int> 
     </void> 
     <void property="name"> 
-     <string>WA1</string> 
+     <string>Savage Effigy QL7 168Hp 102AR</string> 
     </void> 
     <void property="slot"> 
-     <object class="TSWTalismans.TalismanSlot" method="valueOf"> 
-      <string>Waist</string> 
+     <object idref="TalismanSlot2"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="critPower"> 
+       <int>33</int> 
+      </void> 
+      <void property="name"> 
+       <string>Savage Glyph QL7 33CP 10PR</string> 
+      </void> 
+      <void property="penetrationRating"> 
+       <int>10</int> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>102</int> 
+    </void> 
+    <void property="health"> 
+     <int>168</int> 
+    </void> 
+    <void property="name"> 
+     <string>Enchanted Effigy QL7 168Hp 102AR</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot2"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="name"> 
+       <string>Enchanted Glyph QL7 21DR 19MP</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>44</int> 
+    </void> 
+    <void property="health"> 
+     <int>391</int> 
+    </void> 
+    <void property="name"> 
+     <string>Enchanted Bone QL7 391Hp 44AR</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot2"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="name"> 
+       <string>Enchanted Glyph QL7 21DR 19MP</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>209</int> 
+    </void> 
+    <void property="health"> 
+     <int>354</int> 
+    </void> 
+    <void property="name"> 
+     <string>Enchanted Ring QL10 354Hp 209AR</string> 
+    </void> 
+    <void property="slot"> 
+     <object id="TalismanSlot3" class="TSWTalismans.TalismanSlot" method="valueOf"> 
+      <string>Finger</string> 
      </object> 
     </void> 
     <void property="slottedGlyph"> 
      <object class="TSWTalismans.GlyphXMLS"> 
       <void property="name"> 
-       <string>37CR10PR</string> 
+       <string>Enchanted Glyph QL10 68DR 23MP</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>82</int> 
+    </void> 
+    <void property="health"> 
+     <int>754</int> 
+    </void> 
+    <void property="name"> 
+     <string>Solid Knot QL9 754Hp 82AR</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot3"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="blockRating"> 
+       <int>82</int> 
+      </void> 
+      <void property="name"> 
+       <string>Solid Glyph QL9 82BR</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>175</int> 
+    </void> 
+    <void property="health"> 
+     <int>292</int> 
+    </void> 
+    <void property="name"> 
+     <string>Ruthless Ring QL8 292Hp 175AR</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot3"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="critRating"> 
+       <int>21</int> 
+      </void> 
+      <void property="hitRating"> 
+       <int>55</int> 
+      </void> 
+      <void property="name"> 
+       <string>Ruthless Glyph QL8 55HR 21CR</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>158</int> 
+    </void> 
+    <void property="health"> 
+     <int>261</int> 
+    </void> 
+    <void property="name"> 
+     <string>Ardent Ring QL7 261Hp 158AR</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot3"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="blockRating"> 
+       <int>32</int> 
+      </void> 
+      <void property="evadeRating"> 
+       <int>35</int> 
+      </void> 
+      <void property="name"> 
+       <string>Ardent Glyph QL7 32BR 35ER</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>192</int> 
+    </void> 
+    <void property="health"> 
+     <int>323</int> 
+    </void> 
+    <void property="name"> 
+     <string>Pharaoh&apos;s Signet Ring</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot3"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="critRating"> 
+       <int>60</int> 
+      </void> 
+      <void property="name"> 
+       <string>Pharaoh&apos;s Signet Ring Glyph</string> 
+      </void> 
+      <void property="penetrationRating"> 
+       <int>8</int> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>175</int> 
+    </void> 
+    <void property="health"> 
+     <int>292</int> 
+    </void> 
+    <void property="name"> 
+     <string>Cobra Ring</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot3"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="critPower"> 
+       <int>66</int> 
+      </void> 
+      <void property="name"> 
+       <string>Cobra Ring Glyph</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>158</int> 
+    </void> 
+    <void property="health"> 
+     <int>261</int> 
+    </void> 
+    <void property="name"> 
+     <string>Savage Ring QL7 261Hp 158AR</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot3"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="critPower"> 
+       <int>51</int> 
+      </void> 
+      <void property="name"> 
+       <string>Savage Glyph QL7 51CP 16PR</string> 
+      </void> 
+      <void property="penetrationRating"> 
+       <int>16</int> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="healRating"> 
+     <int>379</int> 
+    </void> 
+    <void property="name"> 
+     <string>Valorous Blood QL9 379HR</string> 
+    </void> 
+    <void property="slot"> 
+     <object id="TalismanSlot4" class="TSWTalismans.TalismanSlot" method="valueOf"> 
+      <string>Head</string> 
+     </object> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="blockRating"> 
+       <int>60</int> 
+      </void> 
+      <void property="name"> 
+       <string>Valorous Glyph QL9 BR60 DR60</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>379</int> 
+    </void> 
+    <void property="name"> 
+     <string>Hell&apos;s Ashes</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot4"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="critRating"> 
+       <int>17</int> 
+      </void> 
+      <void property="hitRating"> 
+       <int>114</int> 
+      </void> 
+      <void property="name"> 
+       <string>Hell&apos;s Ashes Glyph</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>91</int> 
+    </void> 
+    <void property="health"> 
+     <int>835</int> 
+    </void> 
+    <void property="name"> 
+     <string>Ferocious Pigment QL9 835Hp 91AR</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot4"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="critPower"> 
+       <int>102</int> 
+      </void> 
+      <void property="name"> 
+       <string>Ferocious Glyph QL9 102CP</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="healRating"> 
+     <int>213</int> 
+    </void> 
+    <void property="health"> 
+     <int>358</int> 
+    </void> 
+    <void property="name"> 
+     <string>Pharaoh&apos;s Blood</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot4"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="hitRating"> 
+       <int>77</int> 
+      </void> 
+      <void property="name"> 
+       <string>Pharaoh&apos;s Blood Glyph</string> 
+      </void> 
+      <void property="penetrationRating"> 
+       <int>11</int> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>194</int> 
+    </void> 
+    <void property="health"> 
+     <int>323</int> 
+    </void> 
+    <void property="name"> 
+     <string>Vizier&apos;s Ashes</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot4"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="hitRating"> 
+       <int>8</int> 
+      </void> 
+      <void property="name"> 
+       <string>Vizier&apos;s Ashes Glyph</string> 
+      </void> 
+      <void property="penetrationRating"> 
+       <int>89</int> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>91</int> 
+    </void> 
+    <void property="health"> 
+     <int>835</int> 
+    </void> 
+    <void property="name"> 
+     <string>Brutal Pigment QL9 835Hp 91AR</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot4"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="critRating"> 
+       <int>107</int> 
+      </void> 
+      <void property="name"> 
+       <string>Brutal Glyph QL9 107CR</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>82</int> 
+    </void> 
+    <void property="health"> 
+     <int>754</int> 
+    </void> 
+    <void property="name"> 
+     <string>Rugged Medallion QL9 754Hp 82AR</string> 
+    </void> 
+    <void property="slot"> 
+     <object id="TalismanSlot5" class="TSWTalismans.TalismanSlot" method="valueOf"> 
+      <string>Neck</string> 
+     </object> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="name"> 
+       <string>Rugged Glyph QL9 61DR 20PP</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="healRating"> 
+     <int>175</int> 
+    </void> 
+    <void property="health"> 
+     <int>292</int> 
+    </void> 
+    <void property="name"> 
+     <string>Valorous Amulet QL8 292Hp 175HR</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot5"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="blockRating"> 
+       <int>18</int> 
+      </void> 
+      <void property="name"> 
+       <string>Valorous Glyph QL8 18BR 35DR</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>75</int> 
+    </void> 
+    <void property="health"> 
+     <int>681</int> 
+    </void> 
+    <void property="name"> 
+     <string>18th Dynasty Medallion</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot5"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="evadeRating"> 
+       <int>8</int> 
+      </void> 
+      <void property="name"> 
+       <string>18th Dynasty Medallion Glyph</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="health"> 
+     <int>1221</int> 
+    </void> 
+    <void property="name"> 
+     <string>Revival Medallion</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot5"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="evadeRating"> 
+       <int>5</int> 
+      </void> 
+      <void property="hitRating"> 
+       <int>85</int> 
+      </void> 
+      <void property="name"> 
+       <string>Revival Medallion Glyph</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="health"> 
+     <int>1221</int> 
+    </void> 
+    <void property="name"> 
+     <string>Piercing Medallion QL8 1221Hp</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot5"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="name"> 
+       <string>Piercing Glyph QL8 95PR</string> 
+      </void> 
+      <void property="penetrationRating"> 
+       <int>95</int> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>158</int> 
+    </void> 
+    <void property="health"> 
+     <int>261</int> 
+    </void> 
+    <void property="name"> 
+     <string>Focused Pendant QL7 261Hp 158AR</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot5"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="critPower"> 
+       <int>34</int> 
+      </void> 
+      <void property="critRating"> 
+       <int>38</int> 
+      </void> 
+      <void property="name"> 
+       <string>Focused Glyph QL7 34CP 38CR</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>82</int> 
+    </void> 
+    <void property="health"> 
+     <int>754</int> 
+    </void> 
+    <void property="name"> 
+     <string>Eye of Horus</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot5"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="critRating"> 
+       <int>68</int> 
+      </void> 
+      <void property="hitRating"> 
+       <int>20</int> 
+      </void> 
+      <void property="name"> 
+       <string>Eye of Horus Glyph</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>123</int> 
+    </void> 
+    <void property="health"> 
+     <int>208</int> 
+    </void> 
+    <void property="name"> 
+     <string>Fierce Dice QL9 208Hp 123AR</string> 
+    </void> 
+    <void property="slot"> 
+     <object id="TalismanSlot6" class="TSWTalismans.TalismanSlot" method="valueOf"> 
+      <string>Luck</string> 
+     </object> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="critRating"> 
+       <int>46</int> 
+      </void> 
+      <void property="name"> 
+       <string>Fierce Glyph QL9 46CR 13PR</string> 
+      </void> 
+      <void property="penetrationRating"> 
+       <int>13</int> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="healRating"> 
+     <int>123</int> 
+    </void> 
+    <void property="health"> 
+     <int>208</int> 
+    </void> 
+    <void property="name"> 
+     <string>Oracle Cards</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot6"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="critPower"> 
+       <int>47</int> 
+      </void> 
+      <void property="hitRating"> 
+       <int>4</int> 
+      </void> 
+      <void property="name"> 
+       <string>Oracle Cards Glyph</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>48</int> 
+    </void> 
+    <void property="health"> 
+     <int>438</int> 
+    </void> 
+    <void property="name"> 
+     <string>Attic Staters</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot6"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="blockRating"> 
+       <int>19</int> 
+      </void> 
+      <void property="hitRating"> 
+       <int>5</int> 
+      </void> 
+      <void property="name"> 
+       <string>Attic Staters Glyph</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>112</int> 
+    </void> 
+    <void property="health"> 
+     <int>188</int> 
+    </void> 
+    <void property="name"> 
+     <string>Fierce Dice QL8 188Hp 112Ar</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot6"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="critRating"> 
+       <int>28</int> 
+      </void> 
+      <void property="name"> 
+       <string>Fierce Glyph QL8 28CR 23PR</string> 
+      </void> 
+      <void property="penetrationRating"> 
+       <int>23</int> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>112</int> 
+    </void> 
+    <void property="health"> 
+     <int>188</int> 
+    </void> 
+    <void property="name"> 
+     <string>Crooked Dice</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot6"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="critPower"> 
+       <int>49</int> 
+      </void> 
+      <void property="name"> 
+       <string>Crooked Dice Glyph</string> 
+      </void> 
+      <void property="penetrationRating"> 
+       <int>8</int> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>102</int> 
+    </void> 
+    <void property="health"> 
+     <int>168</int> 
+    </void> 
+    <void property="name"> 
+     <string>Resilient Dice QL7 168Hp 102AR</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot6"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="evadeRating"> 
+       <int>11</int> 
+      </void> 
+      <void property="name"> 
+       <string>Resilient Glyph QL7 31DR 11ER</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>39</int> 
+    </void> 
+    <void property="health"> 
+     <int>345</int> 
+    </void> 
+    <void property="name"> 
+     <string>Ferocious Coins QL6 345Hp 39AR</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot6"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="critPower"> 
+       <int>37</int> 
+      </void> 
+      <void property="name"> 
+       <string>Ferocious Glyph QL6 37CP</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="name"> 
+     <string>Devastating Elementalism Focus QL8 246WP</string> 
+    </void> 
+    <void property="slot"> 
+     <object id="TalismanSlot7" class="TSWTalismans.TalismanSlot" method="valueOf"> 
+      <string>Weapon</string> 
+     </object> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="critPower"> 
+       <int>66</int> 
+      </void> 
+      <void property="hitRating"> 
+       <int>20</int> 
+      </void> 
+      <void property="name"> 
+       <string>Devastating Glyph QL8 20HR 66Cp</string> 
+      </void> 
+     </object> 
+    </void> 
+    <void property="weaponPower"> 
+     <int>246</int> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="name"> 
+     <string>Ash of the Phoenix</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot7"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="critRating"> 
+       <int>21</int> 
+      </void> 
+      <void property="hitRating"> 
+       <int>102</int> 
+      </void> 
+      <void property="name"> 
+       <string>Ash of the Phoenix Glyph</string> 
+      </void> 
+     </object> 
+    </void> 
+    <void property="weaponPower"> 
+     <int>314</int> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>271</int> 
+    </void> 
+    <void property="name"> 
+     <string>Devastating Ashes QL6 271AR</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot4"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="critPower"> 
+       <int>64</int> 
+      </void> 
+      <void property="hitRating"> 
+       <int>20</int> 
+      </void> 
+      <void property="name"> 
+       <string>Devastating Glyph QL6 20HR 64CP</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>141</int> 
+    </void> 
+    <void property="health"> 
+     <int>230</int> 
+    </void> 
+    <void property="name"> 
+     <string>Focused Ring QL6 230Hp 141AR</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot3"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="critPower"> 
+       <int>29</int> 
+      </void> 
+      <void property="critRating"> 
+       <int>33</int> 
+      </void> 
+      <void property="name"> 
+       <string>Focused Glyph QL6 29CP 33CR</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="health"> 
+     <int>1221</int> 
+    </void> 
+    <void property="name"> 
+     <string>Fierce Medallion QL8 1221Hp</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot5"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="critRating"> 
+       <int>56</int> 
+      </void> 
+      <void property="name"> 
+       <string>Fierce Glyph QL8 56CR 47PR</string> 
+      </void> 
+      <void property="penetrationRating"> 
+       <int>47</int> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>141</int> 
+    </void> 
+    <void property="health"> 
+     <int>230</int> 
+    </void> 
+    <void property="name"> 
+     <string>Focused Bracelet QL6 230Hp 141AR</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot0"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="critPower"> 
+       <int>29</int> 
+      </void> 
+      <void property="critRating"> 
+       <int>33</int> 
+      </void> 
+      <void property="name"> 
+       <string>Focused Glyph QL6 29CP 33CR</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>199</int> 
+    </void> 
+    <void property="name"> 
+     <string>Sekhmet&apos;s Gambit</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot6"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="critPower"> 
+       <int>71</int> 
+      </void> 
+      <void property="name"> 
+       <string>Sekhmet&apos;s Gambit Glyph</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>102</int> 
+    </void> 
+    <void property="health"> 
+     <int>168</int> 
+    </void> 
+    <void property="name"> 
+     <string>Fierce Chain QL7 168Hp 102AR</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot1"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="critRating"> 
+       <int>37</int> 
+      </void> 
+      <void property="name"> 
+       <string>Fierce Glyph QL7 37CR 10PR</string> 
+      </void> 
+      <void property="penetrationRating"> 
+       <int>10</int> 
       </void> 
      </object> 
     </void> 
@@ -125,70 +1613,21 @@
      <int>168</int> 
     </void> 
     <void property="name"> 
-     <string>O1</string> 
+     <string>Scarab Beetle</string> 
     </void> 
     <void property="slot"> 
-     <object class="TSWTalismans.TalismanSlot" method="valueOf"> 
-      <string>Occult</string> 
-     </object> 
+     <object idref="TalismanSlot2"/> 
     </void> 
     <void property="slottedGlyph"> 
      <object class="TSWTalismans.GlyphXMLS"> 
-      <void property="name"> 
-       <string>8CR35CP</string> 
+      <void property="critPower"> 
+       <int>35</int> 
       </void> 
-     </object> 
-    </void> 
-   </object> 
-  </void> 
-  <void method="add"> 
-   <object class="TSWTalismans.TalismanXMLS"> 
-    <void property="health"> 
-     <int>1221</int> 
-    </void> 
-    <void property="name"> 
-     <string>N1</string> 
-    </void> 
-    <void property="slot"> 
-     <object class="TSWTalismans.TalismanSlot" method="valueOf"> 
-      <string>Neck</string> 
-     </object> 
-    </void> 
-    <void property="slottedGlyph"> 
-     <object class="TSWTalismans.GlyphXMLS"> 
       <void property="critRating"> 
-       <int>56</int> 
+       <int>8</int> 
       </void> 
       <void property="name"> 
-       <string>56CR47PR</string> 
-      </void> 
-      <void property="penetrationRating"> 
-       <int>47</int> 
-      </void> 
-     </object> 
-    </void> 
-   </object> 
-  </void> 
-  <void method="add"> 
-   <object class="TSWTalismans.TalismanXMLS"> 
-    <void property="attackRating"> 
-     <int>199</int> 
-    </void> 
-    <void property="name"> 
-     <string>L1</string> 
-    </void> 
-    <void property="slot"> 
-     <object class="TSWTalismans.TalismanSlot" method="valueOf"> 
-      <string>Luck</string> 
-     </object> 
-    </void> 
-    <void property="slottedGlyph"> 
-     <object class="TSWTalismans.GlyphXMLS"> 
-      <void property="critPower"> 
-       <int>71</int> 
-      </void> 
-      <void property="name"> 
-       <string>71CP</string> 
+       <string>Scarab Beetle Glyph</string> 
       </void> 
      </object> 
     </void> 
@@ -197,28 +1636,26 @@
   <void method="add"> 
    <object class="TSWTalismans.TalismanXMLS"> 
     <void property="name"> 
-     <string>W1</string> 
+     <string>Dresden Codex Page</string> 
     </void> 
     <void property="slot"> 
-     <object class="TSWTalismans.TalismanSlot" method="valueOf"> 
-      <string>Weapon</string> 
-     </object> 
+     <object idref="TalismanSlot7"/> 
     </void> 
     <void property="slottedGlyph"> 
      <object class="TSWTalismans.GlyphXMLS"> 
       <void property="critPower"> 
-       <int>18</int> 
+       <int>21</int> 
       </void> 
-      <void property="hitRating"> 
-       <int>89</int> 
+      <void property="critRating"> 
+       <int>70</int> 
       </void> 
       <void property="name"> 
-       <string>18CP89HR</string> 
+       <string>Dresden Codex Page Glyph</string> 
       </void> 
      </object> 
     </void> 
     <void property="weaponPower"> 
-     <int>291</int> 
+     <int>242</int> 
     </void> 
    </object> 
   </void> 
