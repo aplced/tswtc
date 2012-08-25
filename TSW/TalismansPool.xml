@@ -1659,5 +1659,227 @@
     </void> 
    </object> 
   </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="health"> 
+     <int>1053</int> 
+    </void> 
+    <void property="name"> 
+     <string>Wabanaki Pigment</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot4"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="critRating"> 
+       <int>91</int> 
+      </void> 
+      <void property="name"> 
+       <string>Wabanaki Pigment Glyph</string> 
+      </void> 
+      <void property="penetrationRating"> 
+       <int>8</int> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>75</int> 
+    </void> 
+    <void property="health"> 
+     <int>681</int> 
+    </void> 
+    <void property="name"> 
+     <string>Attuned Knot QL8 681HP 75AR</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot3"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="name"> 
+       <string>Attuned Glyph QL8 35MP 35PP</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="healRating"> 
+     <int>309</int> 
+    </void> 
+    <void property="name"> 
+     <string>Fearless Amulet QL8 309HR</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot5"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="evadeRating"> 
+       <int>78</int> 
+      </void> 
+      <void property="name"> 
+       <string>Fearless Glyph QL8 78ER 24PP</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>309</int> 
+    </void> 
+    <void property="name"> 
+     <string>Valorous Bracelet QL8 309AR</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot0"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="blockRating"> 
+       <int>47</int> 
+      </void> 
+      <void property="name"> 
+       <string>Valorous Glyph QL8 47BR 47DR</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>102</int> 
+    </void> 
+    <void property="health"> 
+     <int>168</int> 
+    </void> 
+    <void property="name"> 
+     <string>Resilient Dice QL7 168Hp 102AR</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot6"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="evadeRating"> 
+       <int>11</int> 
+      </void> 
+      <void property="name"> 
+       <string>Resilient Glyph QL7 31DR 11ER</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="healRating"> 
+     <int>112</int> 
+    </void> 
+    <void property="health"> 
+     <int>188</int> 
+    </void> 
+    <void property="name"> 
+     <string>Fierce Buckle QL8 188Hp 112HR</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot1"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="critRating"> 
+       <int>41</int> 
+      </void> 
+      <void property="name"> 
+       <string>Fierce Glyph QL8 41CR 12PR</string> 
+      </void> 
+      <void property="penetrationRating"> 
+       <int>12</int> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="attackRating"> 
+     <int>48</int> 
+    </void> 
+    <void property="health"> 
+     <int>438</int> 
+    </void> 
+    <void property="name"> 
+     <string>Ellusive Bone QL8 438Hp 48AR</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot2"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="evadeRating"> 
+       <int>39</int> 
+      </void> 
+      <void property="name"> 
+       <string>Ellusive Glyph QL8 39ER 11MP</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="name"> 
+     <string>Savage Hammer QL8</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot7"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="critPower"> 
+       <int>44</int> 
+      </void> 
+      <void property="name"> 
+       <string>Savage Glyph QL8 44CP 40PR</string> 
+      </void> 
+      <void property="penetrationRating"> 
+       <int>40</int> 
+      </void> 
+     </object> 
+    </void> 
+    <void property="weaponPower"> 
+     <int>224</int> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.TalismanXMLS"> 
+    <void property="name"> 
+     <string>Stalwart Blade QL8</string> 
+    </void> 
+    <void property="slot"> 
+     <object idref="TalismanSlot7"/> 
+    </void> 
+    <void property="slottedGlyph"> 
+     <object class="TSWTalismans.GlyphXMLS"> 
+      <void property="name"> 
+       <string>Stalwart Glyph QL8 81DR</string> 
+      </void> 
+     </object> 
+    </void> 
+    <void property="weaponPower"> 
+     <int>236</int> 
+    </void> 
+   </object> 
+  </void> 
  </object> 
 </java> 

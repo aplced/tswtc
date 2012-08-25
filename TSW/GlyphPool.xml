@@ -669,5 +669,98 @@
     </void> 
    </object> 
   </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.GlyphXMLS"> 
+    <void property="critRating"> 
+     <int>91</int> 
+    </void> 
+    <void property="name"> 
+     <string>Wabanaki Pigment Glyph</string> 
+    </void> 
+    <void property="penetrationRating"> 
+     <int>8</int> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.GlyphXMLS"> 
+    <void property="name"> 
+     <string>Attuned Glyph QL8 35MP 35PP</string> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.GlyphXMLS"> 
+    <void property="evadeRating"> 
+     <int>78</int> 
+    </void> 
+    <void property="name"> 
+     <string>Fearless Glyph QL8 78ER 24PP</string> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.GlyphXMLS"> 
+    <void property="blockRating"> 
+     <int>47</int> 
+    </void> 
+    <void property="name"> 
+     <string>Valorous Glyph QL8 47BR 47DR</string> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.GlyphXMLS"> 
+    <void property="evadeRating"> 
+     <int>11</int> 
+    </void> 
+    <void property="name"> 
+     <string>Resilient Glyph QL7 31DR 11ER</string> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.GlyphXMLS"> 
+    <void property="critRating"> 
+     <int>41</int> 
+    </void> 
+    <void property="name"> 
+     <string>Fierce Glyph QL8 41CR 12PR</string> 
+    </void> 
+    <void property="penetrationRating"> 
+     <int>12</int> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.GlyphXMLS"> 
+    <void property="evadeRating"> 
+     <int>39</int> 
+    </void> 
+    <void property="name"> 
+     <string>Ellusive Glyph QL8 39ER 11MP</string> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.GlyphXMLS"> 
+    <void property="critPower"> 
+     <int>44</int> 
+    </void> 
+    <void property="name"> 
+     <string>Savage Glyph QL8 44CP 40PR</string> 
+    </void> 
+    <void property="penetrationRating"> 
+     <int>40</int> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="TSWTalismans.GlyphXMLS"> 
+    <void property="name"> 
+     <string>Stalwart Glyph QL8 81DR</string> 
+    </void> 
+   </object> 
+  </void> 
  </object> 
 </java> 
