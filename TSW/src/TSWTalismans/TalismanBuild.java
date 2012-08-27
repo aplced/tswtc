@@ -336,4 +336,10 @@ public class TalismanBuild
 		}
 	}
 
+	@Override
+	public String toString()
+	{
+		return Name;
+	}
+
 }

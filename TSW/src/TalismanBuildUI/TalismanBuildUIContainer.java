@@ -40,6 +40,7 @@ public class TalismanBuildUIContainer
 
 	public JTextField talismanBuildName = new JTextField(10);
 	public JLabel committedBuildName = new JLabel();
+	public JComboBox selectBuild = new JComboBox();
 
 	public JComboBox[] headSelection = new JComboBox[1];
 	public JComboBox[] majorSelection = new JComboBox[3];
@@ -89,7 +90,6 @@ public class TalismanBuildUIContainer
 		CreateTalismanDisplayLabels(minorDisplay, 3);
 		CreateTalismanDisplayLabels(weaponDisplay, 2);
 
-		committedBuildName.setText("Generic build");
 		talismanBuildName.setText("Generic build");
 
 		RefreshTalismanSlot(TalismanSlot.Head);
@@ -164,8 +164,6 @@ public class TalismanBuildUIContainer
 	{
 		if(committedBuild != null)
 		{
-			committedBuildName.setText(committedBuild.Name);
-
 			for(Talisman talisman : committedBuild.GetBuildTalismans())
 			{
 				switch(talisman.GetTalismanSlot())
@@ -210,9 +208,18 @@ public class TalismanBuildUIContainer
 		crntBuild.Name = talismanBuildName.getText();
 		committedBuild = crntBuild;
 		SaveCommittedBuildToFile();
+
+		UpdateBuildSelectionDropDown();
+
 		crntBuild = InitializeNewBuild();
 		RefreshCommitedBuildDisplay();
 		UpdateComparissonView();
+	}
+
+	private void UpdateBuildSelectionDropDown()
+	{
+		selectBuild.removeAll();
+		selectBuild.addItem(committedBuild);
 	}
 
 	private TalismanBuild InitializeNewBuild()

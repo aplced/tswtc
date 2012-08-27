@@ -31,7 +31,7 @@ public class TalismanBuildViewPanelFactory
 		JPanel panel = new JPanel();
 		panel.setLayout(new FlowLayout());
 
-		panel.add(talCb.committedBuildName);
+		panel.add(talCb.selectBuild);
 
 		return panel;
 	}
