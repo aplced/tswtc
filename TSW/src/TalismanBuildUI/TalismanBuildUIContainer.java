@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
@@ -34,7 +35,7 @@ public class TalismanBuildUIContainer
 	public TalismanPool talismanPool;
 	public GlyphPool glyphPool;
 	TalismanBuild crntBuild;
-	TalismanBuild committedBuild;
+	HashMap<String, TalismanBuild> savedBuilds = new HashMap<String, TalismanBuild>();
 
 	public JTextField talismanBuildName = new JTextField(10);
 	public JLabel committedBuildName = new JLabel();
@@ -47,7 +48,7 @@ public class TalismanBuildUIContainer
 	public JLabel[] headDisplay = new JLabel[1];
 	public JLabel[] majorDisplay = new JLabel[3];
 	public JLabel[] minorDisplay = new JLabel[3];
-	public JLabel[] weaponDisplay = new JLabel[2];
+	public JLabel[] weaponDisplay = new JLabel[1];
 
 	public JLabel compCombatPower = new JLabel();
 	public JLabel compHealPower = new JLabel();
@@ -101,14 +102,16 @@ public class TalismanBuildUIContainer
 
 		RefreshCommitedBuildDisplay();
 	}
+	
+	private TalismanBuild GetSelectedSavedBuild()
+	{
+		//TODO: actual selection...
+		return new TalismanBuild();
+	}
 
 	private void UpdateComparissonView()
 	{
-		TalismanBuild build;
-		if(committedBuild != null)
-			build = committedBuild;
-		else
-			build = crntBuild;
+		TalismanBuild build = GetSelectedSavedBuild();
 
 		UpdateComparrissonComponent(compHealth, build.GetHealth(), crntBuild.GetHealth());
 		UpdateComparrissonComponent(compAttackRating, build.GetAttackRating(), crntBuild.GetAttackRating());
@@ -196,33 +199,40 @@ public class TalismanBuildUIContainer
 			}
 		}
 	}
+	
+	public void CreateNewBuild()
+	{
+		TalismanBuild committedBuild = GetSelectedSavedBuild();
+		ApplyTalismanSelectionOnBuild(committedBuild);
+		UpdateComparissonView();		
+	}
 
 	public void UpdateTalismanOnBuild()
 	{
-		crntBuild = InitializeNewBuild();
+		if(crntBuild == null)
+			crntBuild = new TalismanBuild();
+		ApplyTalismanSelectionOnBuild(crntBuild);
 		UpdateComparissonView();
 	}
 
 	public void CommitCurrentBuild()
 	{
-		crntBuild.Name = talismanBuildName.getText();
-		committedBuild = crntBuild;
+		TalismanBuild committedBuild = GetSelectedSavedBuild();
+		committedBuild.Name = talismanBuildName.getText();
+		ApplyTalismanSelectionOnBuild(committedBuild);
+		
 		SaveCommittedBuildToFile();
-		crntBuild = InitializeNewBuild();
+		
 		RefreshCommitedBuildDisplay();
 		UpdateComparissonView();
 	}
-
-	private TalismanBuild InitializeNewBuild()
+	
+	private void ApplyTalismanSelectionOnBuild(TalismanBuild appBuild)
 	{
-		TalismanBuild appBuild = new TalismanBuild();
-
 		ApplyAllSelectedOnBuild(appBuild, headSelection);
 		ApplyAllSelectedOnBuild(appBuild, majorSelection);
 		ApplyAllSelectedOnBuild(appBuild, minorSelection);
-		ApplyAllSelectedOnBuild(appBuild, weaponSelection);
-
-		return appBuild;
+		ApplyAllSelectedOnBuild(appBuild, weaponSelection);		
 	}
 
 	private void ApplyAllSelectedOnBuild(TalismanBuild appBuild, JComboBox[] talismanSelection)
