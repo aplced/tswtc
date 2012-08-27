@@ -1,5 +1,6 @@
 package TalismanBuildUI.TalismanEditUI;
 import java.awt.GridLayout;
+import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JComboBox;
@@ -9,9 +10,11 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 import TSWTalismans.Glyph;
+import TSWTalismans.GlyphPool;
 import TSWTalismans.TalismanSlot;
-import TalismanBuildUI.TalismanBuildUIContainer;
-import TalismanBuildUI.TalismanEditUI.ActionListeners.CreateTalismanDoneListener;
+import TalismanBuildUI.GlpyhEditUI.GlyphEditFrame;
+import TalismanBuildUI.TalismanEditUI.ActionListeners.CreateGlyphBtnListener;
+import TalismanBuildUI.TalismanEditUI.ActionListeners.CreateGlyphDoneAndRefreshListener;
 
 @SuppressWarnings("serial")
 public class TalismanEditFrame extends JFrame
@@ -24,30 +27,47 @@ public class TalismanEditFrame extends JFrame
 	private JTextField weaponPowerJTxt = new JTextField(10);
 	private JTextField healRatingJTxt = new JTextField(10);
 
+	private GlyphPool glyphPool;
+
 	private JComboBox glyphSelection = new JComboBox();
 
-	public TalismanEditFrame(String caption, TalismanBuildUIContainer talCb)
+	private JButton createGlyph = new JButton("New Glyph");
+	private JButton createDone = new JButton("Ok");
+	private JButton createCancel = new JButton("Cancel");
+
+	public TalismanEditFrame(String caption, GlyphPool iGlyphPool)
 	{
+		glyphPool = iGlyphPool;
+
 		setTitle(caption);
 		setLocationRelativeTo(null);
 
-		setContentPane(PrepareTalismanEditPanel(talCb));
+		setContentPane(PrepareTalismanEditPanel());
+		createGlyph.addActionListener(new CreateGlyphBtnListener(this));
 		pack();
 	}
 
-	private void RefreshGlyphComboBox(TalismanBuildUIContainer talCb)
+	public void CreateNewGlyph()
+	{
+		GlyphEditFrame newGlyphFrame = new GlyphEditFrame("New glyph");
+		newGlyphFrame.AssignDoneActionListener(new CreateGlyphDoneAndRefreshListener(this, newGlyphFrame, glyphPool));
+		newGlyphFrame.setVisible(true);
+		RefreshGlyphComboBox();
+	}
+
+	public void RefreshGlyphComboBox()
 	{
 		glyphSelection.removeAllItems();
-		for(Glyph gph : talCb.glyphPool.GetAvailableGlyphs())
+		for(Glyph gph : glyphPool.GetAvailableGlyphs())
 		{
 			glyphSelection.addItem(gph);
 		}
 	}
 
-	private JPanel PrepareTalismanEditPanel(TalismanBuildUIContainer talCb)
+	private JPanel PrepareTalismanEditPanel()
 	{
 		JPanel talismanEditPanel = new JPanel();
-		talismanEditPanel.setLayout(new GridLayout(13, 2));
+		talismanEditPanel.setLayout(new GridLayout(14, 2));
 
 
 		typeJCbx.addItem(TalismanSlot.Head);
@@ -66,7 +86,7 @@ public class TalismanEditFrame extends JFrame
 		weaponPowerJTxt.setText("0");
 		healRatingJTxt.setText("0");
 
-		RefreshGlyphComboBox(talCb);
+		RefreshGlyphComboBox();
 
 		talismanEditPanel.add(new JLabel("Type:"));
 		talismanEditPanel.add(typeJCbx);
@@ -84,17 +104,18 @@ public class TalismanEditFrame extends JFrame
 		talismanEditPanel.add(healRatingJTxt);
 		talismanEditPanel.add(new JLabel("Glyph:"));
 		talismanEditPanel.add(glyphSelection);
-
-		CreateTalismanDoneListener createTalismanDone = new CreateTalismanDoneListener(this, talCb);
-		JButton createDone = new JButton("Ok");
-		createDone.addActionListener(createTalismanDone);
-		JButton createCancel = new JButton("Cancel");
-		createCancel.addActionListener(createTalismanDone);
-
+		talismanEditPanel.add(new JLabel(""));
+		talismanEditPanel.add(createGlyph);
 		talismanEditPanel.add(createDone);
 		talismanEditPanel.add(createCancel);
 
 		return talismanEditPanel;
+	}
+
+	public void AssignDoneActionListener(ActionListener createTalismanDone)
+	{
+		createDone.addActionListener(createTalismanDone);
+		createCancel.addActionListener(createTalismanDone);
 	}
 
 	public TalismanSlot GetSlot()

@@ -18,7 +18,9 @@ import TSWTalismans.TalismanPool;
 import TSWTalismans.TalismanSlot;
 import TalismanBuildUI.ActionListeners.TalismaSelectionChangedListener;
 import TalismanBuildUI.GlpyhEditUI.GlyphEditFrame;
+import TalismanBuildUI.GlpyhEditUI.ActionListeners.CreateGlyphDoneListener;
 import TalismanBuildUI.TalismanEditUI.TalismanEditFrame;
+import TalismanBuildUI.TalismanEditUI.ActionListeners.CreateTalismanDoneListener;
 
 public class TalismanBuildUIContainer
 {
@@ -316,13 +318,15 @@ public class TalismanBuildUIContainer
 
 	public void CreateNewTalisman()
 	{
-		TalismanEditFrame newTalismanFrame = new TalismanEditFrame("New weapon/talisman", this);
+		TalismanEditFrame newTalismanFrame = new TalismanEditFrame("New weapon/talisman", glyphPool);
+		newTalismanFrame.AssignDoneActionListener(new CreateTalismanDoneListener(newTalismanFrame, this));
 		newTalismanFrame.setVisible(true);
 	}
 
 	public void CreateNewGlyph()
 	{
-		GlyphEditFrame newGlyphFrame = new GlyphEditFrame("New glyph", this);
+		GlyphEditFrame newGlyphFrame = new GlyphEditFrame("New glyph");
+		newGlyphFrame.AssignDoneActionListener(new CreateGlyphDoneListener(newGlyphFrame, glyphPool));
 		newGlyphFrame.setVisible(true);
 	}
 

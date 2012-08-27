@@ -1,14 +1,12 @@
 package TalismanBuildUI.GlpyhEditUI;
 import java.awt.GridLayout;
+import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
-
-import TalismanBuildUI.TalismanBuildUIContainer;
-import TalismanBuildUI.GlpyhEditUI.ActionListeners.CreateGlyphDoneListener;
 
 @SuppressWarnings("serial")
 public class GlyphEditFrame extends JFrame
@@ -24,21 +22,23 @@ public class GlyphEditFrame extends JFrame
 	private JTextField critPowerJTxt = new JTextField(10);
 	private JTextField penetrationRatingJTxt = new JTextField(10);
 	private JTextField hitRatingJTxt = new JTextField(10);
+	private JButton createDone = new JButton("Ok");
+	private JButton createCancel = new JButton("Cancel");
 
 
-	public GlyphEditFrame(String caption, TalismanBuildUIContainer talCb)
+	public GlyphEditFrame(String caption)
 	{
 		setTitle(caption);
 		setLocationRelativeTo(null);
 
-		setContentPane(PrepareGlyphEditPanel(talCb));
+		setContentPane(PrepareGlyphEditPanel());
 		pack();
 	}
 
-	private JPanel PrepareGlyphEditPanel(TalismanBuildUIContainer talCb)
+	private JPanel PrepareGlyphEditPanel()
 	{
 		JPanel talismanEditPanel = new JPanel();
-		talismanEditPanel.setLayout(new GridLayout(11, 2));
+		talismanEditPanel.setLayout(new GridLayout(12, 2));
 
 		nameJTxt.setText("Glyph");
 		blockRatingJTxt.setText("0");
@@ -74,18 +74,17 @@ public class GlyphEditFrame extends JFrame
 		talismanEditPanel.add(new JLabel("Hit rating:"));
 		talismanEditPanel.add(hitRatingJTxt);
 
-		CreateGlyphDoneListener createGlyphDone = new CreateGlyphDoneListener(this, talCb);
-		JButton createDone = new JButton("Ok");
-		createDone.addActionListener(createGlyphDone);
-		JButton createCancel = new JButton("Cancel");
-		createCancel.addActionListener(createGlyphDone);
-
 		talismanEditPanel.add(createDone);
 		talismanEditPanel.add(createCancel);
 
 		return talismanEditPanel;
 	}
 
+	public void AssignDoneActionListener(ActionListener createGlyphDone)
+	{
+		createDone.addActionListener(createGlyphDone);
+		createCancel.addActionListener(createGlyphDone);
+	}
 
 	public String GetName()
 	{

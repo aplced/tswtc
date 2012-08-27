@@ -5,18 +5,18 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 
 import TSWTalismans.Glyph;
-import TalismanBuildUI.TalismanBuildUIContainer;
+import TSWTalismans.GlyphPool;
 import TalismanBuildUI.GlpyhEditUI.GlyphEditFrame;
 
 public class CreateGlyphDoneListener implements ActionListener
 {
 	private GlyphEditFrame editFrame;
-	private TalismanBuildUIContainer talCb;
+	private GlyphPool glyphPool;
 
-	public CreateGlyphDoneListener(GlyphEditFrame iEditFrame, TalismanBuildUIContainer iTalCb)
+	public CreateGlyphDoneListener(GlyphEditFrame iEditFrame, GlyphPool iGlyphPoop)
 	{
 		editFrame = iEditFrame;
-		talCb = iTalCb;
+		glyphPool = iGlyphPoop;
 	}
 
 	@Override
@@ -37,7 +37,7 @@ public class CreateGlyphDoneListener implements ActionListener
             tmpGlyph.MagicalProtection = editFrame.GetMagicalProtection();
             tmpGlyph.PhysicalProtection = editFrame.GetPhysicalProtection();
 
-			talCb.glyphPool.AddGlyph(tmpGlyph);
+			glyphPool.AddGlyph(tmpGlyph);
 		}
 		editFrame.setVisible(false);
 		editFrame.dispose();
