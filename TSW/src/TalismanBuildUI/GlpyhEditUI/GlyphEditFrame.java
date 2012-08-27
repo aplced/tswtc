@@ -14,7 +14,7 @@ import TalismanBuildUI.GlpyhEditUI.ActionListeners.CreateGlyphDoneListener;
 public class GlyphEditFrame extends JFrame
 {
 	private JTextField nameJTxt = new JTextField(10);
-
+	private JTextField qualityLevelJTxt = new JTextField(10);
 	private JTextField blockRatingJTxt = new JTextField(10);
 	private JTextField evadeRatingJTxt = new JTextField(10);
 	private JTextField defenceRatingJTxt = new JTextField(10);
@@ -53,6 +53,8 @@ public class GlyphEditFrame extends JFrame
 
 		talismanEditPanel.add(new JLabel("Name:"));
 		talismanEditPanel.add(nameJTxt);
+		talismanEditPanel.add(new JLabel("Quality level:"));
+		talismanEditPanel.add(qualityLevelJTxt);
 		talismanEditPanel.add(new JLabel("Block rating:"));
 		talismanEditPanel.add(blockRatingJTxt);
 		talismanEditPanel.add(new JLabel("Evade rating"));
@@ -88,6 +90,11 @@ public class GlyphEditFrame extends JFrame
 	public String GetName()
 	{
 		return nameJTxt.getText();
+	}
+
+	public int GetQualityLevel()
+	{
+		return Integer.parseInt(qualityLevelJTxt.getText());
 	}
 
 	public int GetBlockRating()

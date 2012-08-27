@@ -26,6 +26,7 @@ public class CreateGlyphDoneListener implements ActionListener
 		{
 			Glyph tmpGlyph = new Glyph();
 			tmpGlyph.Name =	editFrame.GetName();
+			tmpGlyph.QualityLevel = editFrame.GetQualityLevel();
 			tmpGlyph.EvadeRating = editFrame.GetEvadeRating();
 			tmpGlyph.BlockRating = editFrame.GetBlockRating();
 			tmpGlyph.CritRating = editFrame.GetCritRating();
@@ -35,7 +36,7 @@ public class CreateGlyphDoneListener implements ActionListener
 			tmpGlyph.DefenceRating = editFrame.GetDefenceRating();
             tmpGlyph.MagicalProtection = editFrame.GetMagicalProtection();
             tmpGlyph.PhysicalProtection = editFrame.GetPhysicalProtection();
-			
+
 			talCb.glyphPool.AddGlyph(tmpGlyph);
 		}
 		editFrame.setVisible(false);

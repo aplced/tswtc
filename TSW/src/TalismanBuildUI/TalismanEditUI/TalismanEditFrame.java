@@ -18,6 +18,7 @@ public class TalismanEditFrame extends JFrame
 {
 	private JComboBox typeJCbx = new JComboBox();
 	private JTextField nameJTxt = new JTextField(10);
+	private JTextField qualityLevelJTxt = new JTextField(10);
 	private JTextField healthJTxt = new JTextField(10);
 	private JTextField attackRatingJTxt = new JTextField(10);
 	private JTextField weaponPowerJTxt = new JTextField(10);
@@ -46,7 +47,7 @@ public class TalismanEditFrame extends JFrame
 	private JPanel PrepareTalismanEditPanel(TalismanBuildUIContainer talCb)
 	{
 		JPanel talismanEditPanel = new JPanel();
-		talismanEditPanel.setLayout(new GridLayout(12, 2));
+		talismanEditPanel.setLayout(new GridLayout(13, 2));
 
 
 		typeJCbx.addItem(TalismanSlot.Head);
@@ -71,6 +72,8 @@ public class TalismanEditFrame extends JFrame
 		talismanEditPanel.add(typeJCbx);
 		talismanEditPanel.add(new JLabel("Name:"));
 		talismanEditPanel.add(nameJTxt);
+		talismanEditPanel.add(new JLabel("Quality level:"));
+		talismanEditPanel.add(qualityLevelJTxt);
 		talismanEditPanel.add(new JLabel("Health:"));
 		talismanEditPanel.add(healthJTxt);
 		talismanEditPanel.add(new JLabel("Attack rating:"));
@@ -102,6 +105,11 @@ public class TalismanEditFrame extends JFrame
 	public String GetName()
 	{
 		return nameJTxt.getText();
+	}
+
+	public int GetQualityLevel()
+	{
+		return Integer.parseInt(qualityLevelJTxt.getText());
 	}
 
 	public int GetHealth()

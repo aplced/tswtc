@@ -3,6 +3,7 @@ package TSWTalismans;
 public class GlyphXMLS
 {
 	private String name;
+	private int qualityLevel;
 	private int evadeRating;
 	private int blockRating;
 	private int critRating;
@@ -15,6 +16,12 @@ public class GlyphXMLS
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+	public int getQualityLevel() {
+		return qualityLevel;
+	}
+	public void setQualityLevel(int qualityLevel) {
+		this.qualityLevel = qualityLevel;
 	}
 	public int getEvadeRating() {
 		return evadeRating;

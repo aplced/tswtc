@@ -12,6 +12,7 @@ public class Talisman
 	private int attackRating = 0;
 	private int healRating = 0;
 	private int weaponPower = 0;
+	private int qualityLevel = 0;
 
 	private Glyph slottedGlyph = new Glyph();
 
@@ -26,20 +27,11 @@ public class Talisman
 		Name = iName;
 	}
 
-	public Talisman(TalismanSlot iSlot, String iName, int iHealth, int iAttackRating, int iHealRating, int iWeaponPower)
-	{
-		SetTalismanSlot(iSlot);
-		Name = iName;
-		health = iHealth;
-		attackRating = iAttackRating;
-		healRating = iHealRating;
-		weaponPower = iWeaponPower;
-	}
-
 	public TalismanXMLS GetSerializable()
 	{
 		TalismanXMLS talismanS = new TalismanXMLS();
 
+		talismanS.setQualityLevel(qualityLevel);
 		talismanS.setAttackRating(attackRating);
 		talismanS.setWeaponPower(weaponPower);
 		talismanS.setHealRating(healRating);
@@ -53,6 +45,7 @@ public class Talisman
 
 	public void InitFromSerizlizable(TalismanXMLS talismanS)
 	{
+		qualityLevel = talismanS.getQualityLevel();
 		attackRating = talismanS.getAttackRating();
 		weaponPower = talismanS.getWeaponPower();
 		healRating = talismanS.getHealRating();
@@ -144,6 +137,16 @@ public class Talisman
 		healRating = iHealRating;
 	}
 
+	public int GetQualityLevel()
+	{
+		return qualityLevel;
+	}
+
+	public void SetQualityLevel(int iQL)
+	{
+		qualityLevel = iQL;
+	}
+
 	public int GetBlockRating()
 	{
 		return (int)(slottedGlyph.BlockRating*multiplier);
@@ -189,9 +192,32 @@ public class Talisman
 		return (int)(slottedGlyph.HitRating*multiplier);
 	}
 
+	public String GetSummaryInfo()
+	{
+		String stats = "";
+		String summary = "QL(" + GetQualityLevel() + ")";
+
+		if(GetWeaponPower() != 0)
+			stats += "WP(" + GetWeaponPower() + ")";
+
+		if(GetHealth() != 0)
+			stats += "Hp(" + GetHealth() + ")";
+
+		if(GetAttackRating() != 0)
+			stats += "AR(" + GetAttackRating() + ")";
+
+		if(GetHealRating() != 0)
+			stats += "HR(" + GetHealRating() + ")";
+
+		if(stats.length() > 0)
+			summary += " {" + stats + "}";
+
+		return summary + " @ " + slottedGlyph.GetSummaryInfo();
+	}
+
 	@Override
 	public String toString()
 	{
-		return Name;
+		return Name + " : " + GetSummaryInfo();
 	}
 }
