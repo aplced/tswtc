@@ -14,25 +14,25 @@ import TalismanBuildUI.ButtonPanel.ActionListeners.SaveTalismanPoolBtnListener;
 
 public class ButtonControlPanelFactory
 {
-	public static JPanel PrepareButtonPanel(TalismanBuildUIContainer talCb)
-	{
-		JPanel panel = new JPanel();
-		panel.setLayout(new FlowLayout());
+    public static JPanel PrepareButtonPanel(TalismanBuildUIContainer talCb)
+    {
+        JPanel panel = new JPanel();
+        panel.setLayout(new FlowLayout());
 
-		JButton saveTalismanPool = new JButton("Save talisman pool");
-		JButton createNewTalisman = new JButton("New weapon/talisman");
-		JButton createNewGlyph = new JButton("New glyph");
+        JButton saveTalismanPool = new JButton("Save talisman pool");
+        JButton createNewTalisman = new JButton("New weapon/talisman");
+        JButton createNewGlyph = new JButton("New glyph");
 
-		createNewTalisman.addActionListener(new CreateTalismanBtnListener(talCb));
-		createNewGlyph.addActionListener(new CreateGlyphBtnListener(talCb));
-		saveTalismanPool.addActionListener(new SaveTalismanPoolBtnListener(talCb));
+        createNewTalisman.addActionListener(new CreateTalismanBtnListener(talCb));
+        createNewGlyph.addActionListener(new CreateGlyphBtnListener(talCb));
+        saveTalismanPool.addActionListener(new SaveTalismanPoolBtnListener(talCb));
 
-		panel.add(createNewTalisman);
-		panel.add(createNewGlyph);
-		panel.add(saveTalismanPool);
+        panel.add(createNewTalisman);
+        panel.add(createNewGlyph);
+        panel.add(saveTalismanPool);
 
-		panel.setBorder(new EmptyBorder(new Insets(2, 20, 20, 20)));
+        panel.setBorder(new EmptyBorder(new Insets(2, 20, 20, 20)));
 
-		return panel;
-	}
+        return panel;
+    }
 }

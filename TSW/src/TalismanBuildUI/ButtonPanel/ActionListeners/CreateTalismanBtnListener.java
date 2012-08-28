@@ -6,16 +6,16 @@ import TalismanBuildUI.TalismanBuildUIContainer;
 
 public class CreateTalismanBtnListener implements ActionListener
 {
-	private TalismanBuildUIContainer talCb;
+    private TalismanBuildUIContainer talCb;
 
-	public CreateTalismanBtnListener(TalismanBuildUIContainer iTalCb)
-	{
-		talCb = iTalCb;
-	}
+    public CreateTalismanBtnListener(TalismanBuildUIContainer iTalCb)
+    {
+        talCb = iTalCb;
+    }
 
-	@Override
-	public void actionPerformed(ActionEvent arg0)
-	{
-		talCb.CreateNewTalisman();
-	}
+    @Override
+    public void actionPerformed(ActionEvent arg0)
+    {
+        talCb.CreateNewTalisman();
+    }
 }

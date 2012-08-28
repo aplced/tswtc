@@ -13,68 +13,68 @@ import TalismanBuildUI.BuildCreatePanel.ActionListeners.CommitBuildBtnListener;
 
 public class TalismanBuildCreatePanelFactory
 {
-	private static JPanel PreparePanelOfTalismanType(JComboBox[] comboBoxes)
-	{
-		JPanel panel = new JPanel();
-		panel.setLayout(new FlowLayout());
+    private static JPanel PreparePanelOfTalismanType(JComboBox[] comboBoxes)
+    {
+        JPanel panel = new JPanel();
+        panel.setLayout(new FlowLayout());
 
-		if(comboBoxes != null)
-		{
-			for(JComboBox box : comboBoxes)
-			{
-				panel.add(box);
-			}
-		}
+        if(comboBoxes != null)
+        {
+            for(JComboBox box : comboBoxes)
+            {
+                panel.add(box);
+            }
+        }
 
-		return panel;
-	}
+        return panel;
+    }
 
-	private static JPanel PrepareCaptionPanel()
-	{
-		JPanel panel = new JPanel();
-		panel.setLayout(new FlowLayout());
+    private static JPanel PrepareCaptionPanel()
+    {
+        JPanel panel = new JPanel();
+        panel.setLayout(new FlowLayout());
 
-		panel.add(new JLabel("Current talisman selection"));
+        panel.add(new JLabel("Current talisman selection"));
 
-		return panel;
-	}
+        return panel;
+    }
 
-	private static JPanel PrepareCommitBuildPanel(TalismanBuildUIContainer talCb)
-	{
-		JPanel panel = new JPanel();
-		panel.setLayout(new FlowLayout());
+    private static JPanel PrepareCommitBuildPanel(TalismanBuildUIContainer talCb)
+    {
+        JPanel panel = new JPanel();
+        panel.setLayout(new FlowLayout());
 
-		JButton commitBuild = new JButton("Commit build");
-		commitBuild.addActionListener(new CommitBuildBtnListener(talCb));
-		panel.add(commitBuild);
+        JButton commitBuild = new JButton("Commit build");
+        commitBuild.addActionListener(new CommitBuildBtnListener(talCb));
+        panel.add(commitBuild);
 
-		return panel;
-	}
+        return panel;
+    }
 
-	private static JPanel PrepareBuildNamePanel(TalismanBuildUIContainer talCb)
-	{
-		JPanel panel = new JPanel();
-		panel.setLayout(new FlowLayout());
+    private static JPanel PrepareBuildNamePanel(TalismanBuildUIContainer talCb)
+    {
+        JPanel panel = new JPanel();
+        panel.setLayout(new FlowLayout());
 
-		panel.add(talCb.talismanBuildName);
+        panel.add(talCb.talismanBuildName);
 
-		return panel;
-	}
+        return panel;
+    }
 
-	public static JPanel PrepareTalismanBuildPanel(TalismanBuildUIContainer talCb)
-	{
-		JPanel allTalismanView = new JPanel();
-		allTalismanView.setLayout(new BoxLayout(allTalismanView, BoxLayout.PAGE_AXIS));
+    public static JPanel PrepareTalismanBuildPanel(TalismanBuildUIContainer talCb)
+    {
+        JPanel allTalismanView = new JPanel();
+        allTalismanView.setLayout(new BoxLayout(allTalismanView, BoxLayout.PAGE_AXIS));
 
-		allTalismanView.add(PrepareCaptionPanel());
-		allTalismanView.add(PreparePanelOfTalismanType(talCb.headSelection));
-		allTalismanView.add(PreparePanelOfTalismanType(talCb.majorSelection));
-		allTalismanView.add(PreparePanelOfTalismanType(talCb.minorSelection));
-		allTalismanView.add(PreparePanelOfTalismanType(talCb.weaponSelection));
-		allTalismanView.add(PrepareBuildNamePanel(talCb));
-		allTalismanView.add(PrepareCommitBuildPanel(talCb));
+        allTalismanView.add(PrepareCaptionPanel());
+        allTalismanView.add(PreparePanelOfTalismanType(talCb.headSelection));
+        allTalismanView.add(PreparePanelOfTalismanType(talCb.majorSelection));
+        allTalismanView.add(PreparePanelOfTalismanType(talCb.minorSelection));
+        allTalismanView.add(PreparePanelOfTalismanType(talCb.weaponSelection));
+        allTalismanView.add(PrepareBuildNamePanel(talCb));
+        allTalismanView.add(PrepareCommitBuildPanel(talCb));
 
-		return allTalismanView;
-	}
+        return allTalismanView;
+    }
 
 }

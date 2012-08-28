@@ -3,26 +3,25 @@
  <object class="java.util.ArrayList"> 
   <void method="add"> 
    <object class="TSWTalismans.GlyphXMLS"> 
-    <void property="name"> 
-     <string>Enchanted Glyph QL9 54DR 56MP</string> 
-    </void> 
-   </object> 
-  </void> 
-  <void method="add"> 
-   <object class="TSWTalismans.GlyphXMLS"> 
-    <void property="critRating"> 
+    <void property="qualityLevel"> 
+     <int>9</int> 
+    </void>
+	<void property="critRating"> 
      <int>32</int> 
     </void> 
     <void property="hitRating"> 
      <int>81</int> 
     </void> 
     <void property="name"> 
-     <string>Ruthless Glyph QL9 81HR 32CR</string> 
+     <string>Ruthless Glyph</string> 
     </void> 
    </object> 
   </void> 
   <void method="add"> 
    <object class="TSWTalismans.GlyphXMLS"> 
+    <void property="qualityLevel"> 
+     <int>0</int> 
+    </void>
     <void property="hitRating"> 
      <int>78</int> 
     </void> 
@@ -36,6 +35,9 @@
   </void> 
   <void method="add"> 
    <object class="TSWTalismans.GlyphXMLS"> 
+    <void property="qualityLevel"> 
+     <int>0</int> 
+    </void>   
     <void property="critPower"> 
      <int>129</int> 
     </void> 
@@ -46,11 +48,14 @@
   </void> 
   <void method="add"> 
    <object class="TSWTalismans.GlyphXMLS"> 
+    <void property="qualityLevel"> 
+     <int>9</int> 
+    </void>   
     <void property="critRating"> 
      <int>24</int> 
     </void> 
     <void property="name"> 
-     <string>Fierce Glyph QL9 24CR 61PR</string> 
+     <string>Fierce Glyph</string> 
     </void> 
     <void property="penetrationRating"> 
      <int>61</int> 
@@ -59,13 +64,19 @@
   </void> 
   <void method="add"> 
    <object class="TSWTalismans.GlyphXMLS"> 
+    <void property="qualityLevel"> 
+     <int>9</int> 
+    </void>   
     <void property="name"> 
-     <string>Stalwart Glyph QL9 82DR</string> 
+     <string>Stalwart Glyph</string> 
     </void> 
    </object> 
   </void> 
   <void method="add"> 
    <object class="TSWTalismans.GlyphXMLS"> 
+    <void property="qualityLevel"> 
+     <int>0</int> 
+    </void>   
     <void property="critRating"> 
      <int>57</int> 
     </void> 
@@ -76,6 +87,9 @@
   </void> 
   <void method="add"> 
    <object class="TSWTalismans.GlyphXMLS"> 
+    <void property="qualityLevel"> 
+     <int>0</int> 
+    </void>   
     <void property="name"> 
      <string>Empty Glyph</string> 
     </void> 
@@ -83,6 +97,9 @@
   </void> 
   <void method="add"> 
    <object class="TSWTalismans.GlyphXMLS"> 
+    <void property="qualityLevel"> 
+     <int>0</int> 
+    </void>   
     <void property="hitRating"> 
      <int>51</int> 
     </void> 
@@ -96,6 +113,9 @@
   </void> 
   <void method="add"> 
    <object class="TSWTalismans.GlyphXMLS"> 
+    <void property="qualityLevel"> 
+     <int>0</int> 
+    </void>   
     <void property="blockRating"> 
      <int>21</int> 
     </void> 
@@ -109,11 +129,14 @@
   </void> 
   <void method="add"> 
    <object class="TSWTalismans.GlyphXMLS"> 
+    <void property="qualityLevel"> 
+     <int>9</int> 
+    </void>   
     <void property="critRating"> 
      <int>31</int> 
     </void> 
     <void property="name"> 
-     <string>Fierce Glyph QL9 31CR 26PR</string> 
+     <string>Fierce Glyph</string> 
     </void> 
     <void property="penetrationRating"> 
      <int>26</int> 
@@ -122,13 +145,9 @@
   </void> 
   <void method="add"> 
    <object class="TSWTalismans.GlyphXMLS"> 
-    <void property="name"> 
-     <string>Enchanted Glyph QL9 13DR 38MP</string> 
-    </void> 
-   </object> 
-  </void> 
-  <void method="add"> 
-   <object class="TSWTalismans.GlyphXMLS"> 
+    <void property="qualityLevel"> 
+     <int>9</int> 
+    </void>   
     <void property="blockRating"> 
      <int>39</int> 
     </void> 
@@ -136,37 +155,46 @@
      <int>14</int> 
     </void> 
     <void property="name"> 
-     <string>Ardent Glyph QL9 39BR 14ER</string> 
+     <string>Ardent Glyph</string> 
     </void> 
    </object> 
   </void> 
   <void method="add"> 
    <object class="TSWTalismans.GlyphXMLS"> 
+    <void property="qualityLevel"> 
+     <int>9</int> 
+    </void>   
     <void property="evadeRating"> 
      <int>14</int> 
     </void> 
     <void property="name"> 
-     <string>Resilient Glyph QL9 39DR 14ER</string> 
+     <string>Resilient Glyph</string> 
     </void> 
    </object> 
   </void> 
   <void method="add"> 
    <object class="TSWTalismans.GlyphXMLS"> 
+    <void property="qualityLevel"> 
+     <int>9</int> 
+    </void>   
     <void property="hitRating"> 
      <int>70</int> 
     </void> 
     <void property="name"> 
-     <string>Accurate Glyph QL9 70HR</string> 
+     <string>Accurate Glyph</string> 
     </void> 
    </object> 
   </void> 
   <void method="add"> 
    <object class="TSWTalismans.GlyphXMLS"> 
+    <void property="qualityLevel"> 
+     <int>9</int> 
+    </void>   
     <void property="critRating"> 
      <int>46</int> 
     </void> 
     <void property="name"> 
-     <string>Fierce Glyph QL9 46CR 13PR</string> 
+     <string>Fierce Glyph</string> 
     </void> 
     <void property="penetrationRating"> 
      <int>13</int> 
@@ -175,28 +203,27 @@
   </void> 
   <void method="add"> 
    <object class="TSWTalismans.GlyphXMLS"> 
+    <void property="qualityLevel"> 
+     <int>9</int> 
+    </void>   
     <void property="evadeRating"> 
      <int>14</int> 
     </void> 
     <void property="name"> 
-     <string>Resilient Glyph QL9 39DR 14ER</string> 
+     <string>Resilient Glyph</string> 
     </void> 
    </object> 
   </void> 
   <void method="add"> 
-   <object class="TSWTalismans.GlyphXMLS"> 
-    <void property="name"> 
-     <string>Black Jackl&apos;s Bone Glyph</string> 
-    </void> 
-   </object> 
-  </void> 
-  <void method="add"> 
-   <object class="TSWTalismans.GlyphXMLS"> 
+   <object class="TSWTalismans.GlyphXMLS">
+    <void property="qualityLevel"> 
+     <int>9</int> 
+    </void>
     <void property="critRating"> 
      <int>46</int> 
     </void> 
     <void property="name"> 
-     <string>Fierce Glyph QL9 46CR 13PR</string> 
+     <string>Fierce Glyph</string> 
     </void> 
     <void property="penetrationRating"> 
      <int>13</int> 
@@ -205,6 +232,9 @@
   </void> 
   <void method="add"> 
    <object class="TSWTalismans.GlyphXMLS"> 
+    <void property="qualityLevel"> 
+     <int>8</int> 
+    </void>   
     <void property="blockRating"> 
      <int>23</int> 
     </void> 
@@ -212,7 +242,7 @@
      <int>26</int> 
     </void> 
     <void property="name"> 
-     <string>Ardent Glyph QL8 23BR 26ER</string> 
+     <string>Ardent Glyph</string> 
     </void> 
    </object> 
   </void> 
@@ -228,11 +258,14 @@
   </void> 
   <void method="add"> 
    <object class="TSWTalismans.GlyphXMLS"> 
+    <void property="qualityLevel"> 
+     <int>8</int> 
+    </void>   
     <void property="critRating"> 
      <int>28</int> 
     </void> 
     <void property="name"> 
-     <string>Fierce Glyph QL8 28CR 23PR</string> 
+     <string>Fierce Glyph</string> 
     </void> 
     <void property="penetrationRating"> 
      <int>23</int> 
@@ -241,11 +274,14 @@
   </void> 
   <void method="add"> 
    <object class="TSWTalismans.GlyphXMLS"> 
+    <void property="qualityLevel"> 
+     <int>7</int> 
+    </void>   
     <void property="critPower"> 
      <int>33</int> 
     </void> 
     <void property="name"> 
-     <string>Savage Glyph QL7 33CP 10PR</string> 
+     <string>Savage Glyph</string> 
     </void> 
     <void property="penetrationRating"> 
      <int>10</int> 
@@ -254,30 +290,22 @@
   </void> 
   <void method="add"> 
    <object class="TSWTalismans.GlyphXMLS"> 
-    <void property="name"> 
-     <string>Enchanted Glyph QL7 21DR 19MP</string> 
-    </void> 
-   </object> 
-  </void> 
-  <void method="add"> 
-   <object class="TSWTalismans.GlyphXMLS"> 
-    <void property="name"> 
-     <string>Enchanted Glyph QL10 68DR 23MP</string> 
-    </void> 
-   </object> 
-  </void> 
-  <void method="add"> 
-   <object class="TSWTalismans.GlyphXMLS"> 
+    <void property="qualityLevel"> 
+     <int>9</int> 
+    </void>   
     <void property="blockRating"> 
      <int>82</int> 
     </void> 
     <void property="name"> 
-     <string>Solid Glyph QL9 82BR</string> 
+     <string>Solid Glyph</string> 
     </void> 
    </object> 
   </void> 
   <void method="add"> 
    <object class="TSWTalismans.GlyphXMLS"> 
+    <void property="qualityLevel"> 
+     <int>8</int> 
+    </void>   
     <void property="critRating"> 
      <int>21</int> 
     </void> 
@@ -285,12 +313,15 @@
      <int>55</int> 
     </void> 
     <void property="name"> 
-     <string>Ruthless Glyph QL8 55HR 21CR</string> 
+     <string>Ruthless Glyph</string> 
     </void> 
    </object> 
   </void> 
   <void method="add"> 
    <object class="TSWTalismans.GlyphXMLS"> 
+    <void property="qualityLevel"> 
+     <int>7</int> 
+    </void>   
     <void property="blockRating"> 
      <int>32</int> 
     </void> 
@@ -298,7 +329,7 @@
      <int>35</int> 
     </void> 
     <void property="name"> 
-     <string>Ardent Glyph QL7 32BR 35ER</string> 
+     <string>Ardent Glyph</string> 
     </void> 
    </object> 
   </void> 
@@ -327,11 +358,14 @@
   </void> 
   <void method="add"> 
    <object class="TSWTalismans.GlyphXMLS"> 
+    <void property="qualityLevel"> 
+     <int>7</int> 
+    </void>   
     <void property="critPower"> 
      <int>51</int> 
     </void> 
     <void property="name"> 
-     <string>Savage Glyph QL7 51CP 16PR</string> 
+     <string>Savage Glyph</string> 
     </void> 
     <void property="penetrationRating"> 
      <int>16</int> 
@@ -340,11 +374,14 @@
   </void> 
   <void method="add"> 
    <object class="TSWTalismans.GlyphXMLS"> 
+    <void property="qualityLevel"> 
+     <int>9</int> 
+    </void>   
     <void property="blockRating"> 
      <int>60</int> 
     </void> 
     <void property="name"> 
-     <string>Valorous Glyph QL9 BR60 DR60</string> 
+     <string>Valorous Glyph</string> 
     </void> 
    </object> 
   </void> 
@@ -363,11 +400,14 @@
   </void> 
   <void method="add"> 
    <object class="TSWTalismans.GlyphXMLS"> 
+    <void property="qualityLevel"> 
+     <int>9</int> 
+    </void>   
     <void property="critPower"> 
      <int>102</int> 
     </void> 
     <void property="name"> 
-     <string>Ferocious Glyph QL9 102CP</string> 
+     <string>Ferocious Glyph</string> 
     </void> 
    </object> 
   </void> 
@@ -399,28 +439,27 @@
   </void> 
   <void method="add"> 
    <object class="TSWTalismans.GlyphXMLS"> 
+    <void property="qualityLevel"> 
+     <int>9</int> 
+    </void>   
     <void property="critRating"> 
      <int>107</int> 
     </void> 
     <void property="name"> 
-     <string>Brutal Glyph QL9 107CR</string> 
+     <string>Brutal Glyph</string> 
     </void> 
    </object> 
   </void> 
   <void method="add"> 
    <object class="TSWTalismans.GlyphXMLS"> 
-    <void property="name"> 
-     <string>Rugged Glyph QL9 61DR 20PP</string> 
-    </void> 
-   </object> 
-  </void> 
-  <void method="add"> 
-   <object class="TSWTalismans.GlyphXMLS"> 
+    <void property="qualityLevel"> 
+     <int>8</int> 
+    </void>   
     <void property="blockRating"> 
      <int>18</int> 
     </void> 
     <void property="name"> 
-     <string>Valorous Glyph QL8 18BR 35DR</string> 
+     <string>Valorous Glyph</string> 
     </void> 
    </object> 
   </void> 
@@ -449,8 +488,11 @@
   </void> 
   <void method="add"> 
    <object class="TSWTalismans.GlyphXMLS"> 
+    <void property="qualityLevel"> 
+     <int>8</int> 
+    </void>   
     <void property="name"> 
-     <string>Piercing Glyph QL8 95PR</string> 
+     <string>Piercing Glyph</string> 
     </void> 
     <void property="penetrationRating"> 
      <int>95</int> 

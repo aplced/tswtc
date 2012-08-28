@@ -7,18 +7,17 @@ import TalismanBuildUI.TalismanBuildUIContainer;
 
 public class SaveTalismanPoolBtnListener implements ActionListener
 {
-	private TalismanBuildUIContainer talCb;
+    private TalismanBuildUIContainer talCb;
 
-	public SaveTalismanPoolBtnListener(TalismanBuildUIContainer iTalCb)
-	{
-		talCb = iTalCb;
-	}
+    public SaveTalismanPoolBtnListener(TalismanBuildUIContainer iTalCb)
+    {
+        talCb = iTalCb;
+    }
 
-	@Override
-	public void actionPerformed(ActionEvent arg0)
-	{
-		talCb.talismanPool.SaveToFile();
-		talCb.glyphPool.SaveToFile();
-	}
-
+    @Override
+    public void actionPerformed(ActionEvent arg0)
+    {
+        talCb.talismanPool.SaveToFile();
+        talCb.glyphPool.SaveToFile();
+    }
 }

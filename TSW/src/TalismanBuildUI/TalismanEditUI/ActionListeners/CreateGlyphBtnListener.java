@@ -6,17 +6,17 @@ import TalismanBuildUI.TalismanEditUI.TalismanEditFrame;
 
 public class CreateGlyphBtnListener implements ActionListener
 {
-	private TalismanEditFrame talEF;
+    private TalismanEditFrame talEF;
 
-	public CreateGlyphBtnListener(TalismanEditFrame iTalEF)
-	{
-		talEF = iTalEF;
-	}
+    public CreateGlyphBtnListener(TalismanEditFrame iTalEF)
+    {
+        talEF = iTalEF;
+    }
 
-	@Override
-	public void actionPerformed(ActionEvent arg0)
-	{
-		talEF.CreateNewGlyph();
-	}
+    @Override
+    public void actionPerformed(ActionEvent arg0)
+    {
+        talEF.CreateNewGlyph();
+    }
 
 }
