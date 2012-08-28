@@ -5,11 +5,11 @@ import java.awt.event.ActionListener;
 import TalismanBuildUI.TalismanBuildUIContainer;
 
 
-public class TalismaSelectionChangedListener implements ActionListener
+public class SavedBuildSelectionChangedListener implements ActionListener
 {
     private TalismanBuildUIContainer talCb;
 
-    public TalismaSelectionChangedListener(TalismanBuildUIContainer iTalCb)
+    public SavedBuildSelectionChangedListener(TalismanBuildUIContainer iTalCb)
     {
         talCb = iTalCb;
     }
@@ -17,7 +17,7 @@ public class TalismaSelectionChangedListener implements ActionListener
     @Override
     public void actionPerformed(ActionEvent e)
     {
-        talCb.UpdateTalismanOnBuild();
+        talCb.UpdateComparissonView();
     }
 
 }

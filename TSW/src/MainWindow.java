@@ -14,32 +14,32 @@ import TalismanBuildUI.StatisticsComparisonPanel.TalismanBuildComparissonPanelFa
 @SuppressWarnings("serial")
 public class MainWindow extends JFrame
 {
-	public static void main(String[] args)
-	{
-		MainWindow win = new MainWindow();
-		win.setVisible(true);
-	}
+    public static void main(String[] args)
+    {
+        MainWindow win = new MainWindow();
+        win.setVisible(true);
+    }
 
-	public MainWindow()
-	{
-		super();
+    public MainWindow()
+    {
+        super();
 
-		TalismanBuildUIContainer talCb = new TalismanBuildUIContainer(new TalismanPool(), new GlyphPool());
+        TalismanBuildUIContainer talCb = new TalismanBuildUIContainer(new TalismanPool(), new GlyphPool());
 
-		setTitle("TSW talisman calculator");
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setLocationRelativeTo(null);
+        setTitle("TSW talisman calculator");
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
 
-		JPanel allPanes = new JPanel();
-		allPanes.setLayout(new BorderLayout());
+        JPanel allPanes = new JPanel();
+        allPanes.setLayout(new BorderLayout());
 
-		allPanes.add(ButtonControlPanelFactory.PrepareButtonPanel(talCb), BorderLayout.NORTH);
-		allPanes.add(TalismanBuildCreatePanelFactory.PrepareTalismanBuildPanel(talCb), BorderLayout.WEST);
-		allPanes.add(TalismanBuildViewPanelFactory.PrepareTalismanViewPanel(talCb), BorderLayout.EAST);
-		allPanes.add(TalismanBuildComparissonPanelFactory.PrepareTalismanComparissonPanel(talCb), BorderLayout.CENTER);
+        allPanes.add(ButtonControlPanelFactory.PrepareButtonPanel(talCb), BorderLayout.NORTH);
+        allPanes.add(TalismanBuildCreatePanelFactory.PrepareTalismanBuildPanel(talCb), BorderLayout.WEST);
+        allPanes.add(TalismanBuildViewPanelFactory.PrepareTalismanViewPanel(talCb), BorderLayout.EAST);
+        allPanes.add(TalismanBuildComparissonPanelFactory.PrepareTalismanComparissonPanel(talCb), BorderLayout.CENTER);
 
-		setContentPane(allPanes);
-		pack();
-	}
+        setContentPane(allPanes);
+        pack();
+    }
 
 }

@@ -6,17 +6,16 @@ import TalismanBuildUI.TalismanBuildUIContainer;
 
 public class CommitBuildBtnListener implements ActionListener
 {
-	private TalismanBuildUIContainer talCb;
+    private TalismanBuildUIContainer talCb;
 
-	public CommitBuildBtnListener(TalismanBuildUIContainer iTalCb)
-	{
-		talCb = iTalCb;
-	}
+    public CommitBuildBtnListener(TalismanBuildUIContainer iTalCb)
+    {
+        talCb = iTalCb;
+    }
 
-	@Override
-	public void actionPerformed(ActionEvent e)
-	{
-		talCb.CommitCurrentBuild();
-	}
-
+    @Override
+    public void actionPerformed(ActionEvent e)
+    {
+        talCb.CommitCurrentBuild();
+    }
 }
