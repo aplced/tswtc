@@ -104,6 +104,7 @@ public class TalismanBuildUIContainer
         RefreshTalismanSlot(TalismanSlot.Occult);
         RefreshTalismanSlot(TalismanSlot.Weapon);
 
+        InitializeBuildSelectionDropDown();
         RefreshCommitedBuildDisplay();
     }
     
@@ -112,7 +113,7 @@ public class TalismanBuildUIContainer
         return (TalismanBuild) selectBuild.getSelectedItem();
     }
 
-    public void UpdateComparissonView()
+    private void UpdateComparissonView()
     {
         TalismanBuild build = GetSelectedBuild();
         if(build == null)
@@ -219,6 +220,21 @@ public class TalismanBuildUIContainer
         crntBuild = InitializeNewBuild();
         RefreshCommitedBuildDisplay();
         UpdateComparissonView();
+    }
+    
+    public void RefreshCommitedBuildComparissonView()
+    {
+    	RefreshCommitedBuildDisplay();
+        UpdateComparissonView();
+    }
+    
+    private void InitializeBuildSelectionDropDown()
+    {
+    	selectBuild.removeAll();
+    	for(TalismanBuild build : savedTalismanBuilds.values())
+    	{
+    		selectBuild.addItem(build);
+    	}
     }
 
     private void UpdateBuildSelectionDropDown(TalismanBuild addedBuild)

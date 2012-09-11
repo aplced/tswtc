@@ -17,7 +17,7 @@ public class SavedBuildSelectionChangedListener implements ActionListener
     @Override
     public void actionPerformed(ActionEvent e)
     {
-        talCb.UpdateComparissonView();
+        talCb.RefreshCommitedBuildComparissonView();
     }
 
 }
