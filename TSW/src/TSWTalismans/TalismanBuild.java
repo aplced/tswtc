@@ -200,11 +200,13 @@ public class TalismanBuild
 
     private void CalculateCritPowerMultiplier()
     {
+    	//TODO: get correct formula
         critPowerMultiplier = 25;
     }
 
     private void CalculateEvadeChance()
     {
+    	//TODO: get correct formula
         evadeChance = 5;
     }
 
