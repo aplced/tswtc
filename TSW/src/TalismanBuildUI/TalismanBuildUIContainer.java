@@ -1,4 +1,6 @@
 package TalismanBuildUI;
+import java.awt.Dimension;
+import java.awt.FontMetrics;
 import java.beans.XMLDecoder;
 import java.beans.XMLEncoder;
 import java.io.FileInputStream;
@@ -9,9 +11,12 @@ import java.util.HashMap;
 
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
+import javax.swing.JPopupMenu;
+import javax.swing.JScrollPane;
 import javax.swing.JTextField;
 
 import TSWTalismans.GlyphPool;
+import TSWTalismans.TaGlInfoProvider;
 import TSWTalismans.Talisman;
 import TSWTalismans.TalismanBuild;
 import TSWTalismans.TalismanBuildXMLS;
@@ -39,7 +44,8 @@ public class TalismanBuildUIContainer
     public GlyphPool glyphPool;
     TalismanBuild crntBuild;
     HashMap<String, TalismanBuild> savedTalismanBuilds = new HashMap<String, TalismanBuild>();
-
+    //TaGlComboBoxRenderer taGlRenderer = new TaGlComboBoxRenderer();
+    
     public JTextField talismanBuildName = new JTextField(10);
     public JLabel committedBuildName = new JLabel();
     public JComboBox selectBuild = new JComboBox();
@@ -81,6 +87,8 @@ public class TalismanBuildUIContainer
         glyphPool = iGPool;
         crntBuild = new TalismanBuild();
         LoadCommittedBuildFromFile();
+        
+        //renderer.setPreferredSize(new Dimension(200, 130));        
 
         CreateTalismanSelectionComboBoxes(headSelection, 1);
         CreateTalismanSelectionComboBoxes(majorSelection, 3);
@@ -272,6 +280,7 @@ public class TalismanBuildUIContainer
         {
             comboBoxes[i] = new JComboBox();
             comboBoxes[i].addActionListener(new TalismaSelectionChangedListener(this));
+            TaGlComboBoxRenderer taGlRenderer = new TaGlComboBoxRenderer(comboBoxes[i]);
         }
     }
 

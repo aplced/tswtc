@@ -1,6 +1,6 @@
 package TSWTalismans;
 
-public class Talisman
+public class Talisman implements TaGlInfoProvider
 {
     public String Name = "talisman";
 
@@ -192,10 +192,14 @@ public class Talisman
         return (int)(slottedGlyph.HitRating*multiplier);
     }
 
+    public String GetPlainName()
+    {
+    	return Name + "(" + slottedGlyph.Name + ")";
+    }
+    
     public String GetSummaryInfo()
     {
-        String stats = "";
-        String summary = "QL(" + GetQualityLevel() + ")";
+        String stats = " QL(" + GetQualityLevel() + ")";
 
         if(GetWeaponPower() != 0)
             stats += "WP(" + GetWeaponPower() + ")";
@@ -209,15 +213,12 @@ public class Talisman
         if(GetHealRating() != 0)
             stats += "HR(" + GetHealRating() + ")";
 
-        if(stats.length() > 0)
-            summary += " {" + stats + "}";
-
-        return summary + " @ " + slottedGlyph.GetSummaryInfo();
+        return Name + stats + " :: " + slottedGlyph.GetSummaryInfo();
     }
 
     @Override
     public String toString()
     {
-        return Name + " : " + GetSummaryInfo();
+        return GetPlainName();
     }
 }

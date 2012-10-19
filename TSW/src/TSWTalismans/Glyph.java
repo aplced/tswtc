@@ -1,6 +1,6 @@
 package TSWTalismans;
 
-public class Glyph
+public class Glyph implements TaGlInfoProvider
 {
     public String Name = "glyph";
 
@@ -66,10 +66,14 @@ public class Glyph
         HitRating = glyphS.getHitRating();
     }
 
+    public String GetPlainName()
+    {
+    	return Name;
+    }
+    
     public String GetSummaryInfo()
     {
-        String stats = "";
-        String summary = "QL(" + QualityLevel + ")";
+        String stats = " QL(" + QualityLevel + ")";
 
         if(EvadeRating != 0)
             stats += "ER(" + EvadeRating + ")";
@@ -90,15 +94,12 @@ public class Glyph
         if(HitRating != 0)
             stats += "HR(" + HitRating + ")";
 
-        if(stats.length() > 0)
-            return summary + " {" + stats + "}";
-        else
-            return summary;
+        return Name + stats;
     }
 
     @Override
     public String toString()
     {
-        return Name + " : " + GetSummaryInfo();
+        return GetPlainName();
     }
 }
