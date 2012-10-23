@@ -24,7 +24,6 @@ public class TaGlComboBoxRenderer extends JLabel implements ListCellRenderer, Po
 	
     public TaGlComboBoxRenderer() 
     {
-        setOpaque(true);
         setVerticalAlignment(CENTER);
         setHorizontalAlignment(LEFT);
     }
@@ -34,8 +33,13 @@ public class TaGlComboBoxRenderer extends JLabel implements ListCellRenderer, Po
 	{
 		TaGlInfoProvider sum = (TaGlInfoProvider)value;
 
+    	setOpaque(false);
+		
         if (isSelected) 
         {
+        	if(onDropDown)
+        		setOpaque(true);
+        	
             setBackground(list.getSelectionBackground());
             setForeground(list.getSelectionForeground());
         } 
@@ -48,9 +52,13 @@ public class TaGlComboBoxRenderer extends JLabel implements ListCellRenderer, Po
 		if(sum != null)
 		{
 			if(onDropDown)
+			{
 				setText(sum.GetSummaryInfo());
+			}
 			else
+			{
 				setText(sum.GetPlainName());
+			}
 		}
 		else if(value != null)
 		{
@@ -106,7 +114,7 @@ public class TaGlComboBoxRenderer extends JLabel implements ListCellRenderer, Po
 			if(cBox.getItemCount() < displayedItms)
 				displayedItms = cBox.getItemCount();
 	
-			return new Dimension(maxStringLen, fontMetrics.getHeight()*(displayedItms + 1));
+			return new Dimension(maxStringLen, fontMetrics.getHeight()*displayedItms);
 		}
 		else
 		{
@@ -126,20 +134,15 @@ public class TaGlComboBoxRenderer extends JLabel implements ListCellRenderer, Po
         JScrollPane scrollPane = (JScrollPane) popup.getComponent(0); 
         Dimension size = CalcItemLength(cBox);
         
-        //popup.setSize(size);
-        //popup.setPreferredSize(size);
-        //popup.setMaximumSize(size);
-        //popup.revalidate();
-        
-        //this.setPreferredSize(size);
-        //this.setMaximumSize(size);
-        //this.revalidate();
+        ScrollPanePropertyLocker sppl = new ScrollPanePropertyLocker();
+        scrollPane.addPropertyChangeListener(sppl);
         
         scrollPane.setHorizontalScrollBar(new JScrollBar(JScrollBar.HORIZONTAL)); 
         scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);     
-        //scrollPane.setSize(size);
+
+        sppl.EnableChange("preferredSize");
         scrollPane.setPreferredSize(size);
+        sppl.EnableChange("maximumSize");
         scrollPane.setMaximumSize(size);
-        //scrollPane.revalidate();
 	}  	
 }

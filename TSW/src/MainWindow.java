@@ -2,6 +2,7 @@ import java.awt.BorderLayout;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.UIManager;
 
 import TSWTalismans.GlyphPool;
 import TSWTalismans.TalismanPool;
@@ -23,6 +24,15 @@ public class MainWindow extends JFrame
     public MainWindow()
     {
         super();
+        
+        try
+        { 
+            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName()); 
+        }
+        catch (Exception e)
+        {
+        } 
+
 
         TalismanBuildUIContainer talCb = new TalismanBuildUIContainer(new TalismanPool(), new GlyphPool());
 

@@ -1,7 +1,4 @@
 package TalismanBuildUI;
-import java.awt.Dimension;
-import java.awt.FontMetrics;
-import java.awt.Graphics;
 import java.beans.XMLDecoder;
 import java.beans.XMLEncoder;
 import java.io.FileInputStream;
@@ -12,12 +9,9 @@ import java.util.HashMap;
 
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
-import javax.swing.JPopupMenu;
-import javax.swing.JScrollPane;
 import javax.swing.JTextField;
 
 import TSWTalismans.GlyphPool;
-import TSWTalismans.TaGlInfoProvider;
 import TSWTalismans.Talisman;
 import TSWTalismans.TalismanBuild;
 import TSWTalismans.TalismanBuildXMLS;
