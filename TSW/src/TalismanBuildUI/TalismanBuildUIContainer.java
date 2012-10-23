@@ -1,6 +1,7 @@
 package TalismanBuildUI;
 import java.awt.Dimension;
 import java.awt.FontMetrics;
+import java.awt.Graphics;
 import java.beans.XMLDecoder;
 import java.beans.XMLEncoder;
 import java.io.FileInputStream;
@@ -276,11 +277,13 @@ public class TalismanBuildUIContainer
 
     private void CreateTalismanSelectionComboBoxes(JComboBox[] comboBoxes, int count)
     {
+    	TaGlComboBoxRenderer taGlRenderer = new TaGlComboBoxRenderer();
         for(int i = 0; i < count; i++)
         {
             comboBoxes[i] = new JComboBox();
             comboBoxes[i].addActionListener(new TalismaSelectionChangedListener(this));
-            TaGlComboBoxRenderer taGlRenderer = new TaGlComboBoxRenderer(comboBoxes[i]);
+            comboBoxes[i].setRenderer(taGlRenderer);
+            comboBoxes[i].addPopupMenuListener(taGlRenderer);
         }
     }
 
@@ -350,7 +353,9 @@ public class TalismanBuildUIContainer
             }
 
             if(availableTalismans.size() > 0)
+            {
                 comboBox.setSelectedIndex(0);
+            }
         }
     }
 
@@ -415,5 +420,5 @@ public class TalismanBuildUIContainer
         {
             i.printStackTrace();
         }
-    }
+    }  
 }

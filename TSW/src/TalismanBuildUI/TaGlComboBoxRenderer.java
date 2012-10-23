@@ -3,11 +3,13 @@ package TalismanBuildUI;
 import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.FontMetrics;
+import java.awt.Graphics;
 
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JList;
 import javax.swing.JPopupMenu;
+import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;
 import javax.swing.ListCellRenderer;
 import javax.swing.event.PopupMenuEvent;
@@ -19,25 +21,19 @@ import TSWTalismans.TaGlInfoProvider;
 public class TaGlComboBoxRenderer extends JLabel implements ListCellRenderer, PopupMenuListener
 {
 	Boolean onDropDown = false;
-	JComboBox caller;
-	FontMetrics fontMetrics;
 	
-    public TaGlComboBoxRenderer(JComboBox icaller) 
+    public TaGlComboBoxRenderer() 
     {
         setOpaque(true);
         setVerticalAlignment(CENTER);
-        setHorizontalAlignment(CENTER);
-                
-        caller = icaller;
-        caller.addPopupMenuListener(this);
-        caller.setRenderer(this);
+        setHorizontalAlignment(LEFT);
     }
 
 	@Override
 	public Component getListCellRendererComponent(JList list, Object value, int index, boolean isSelected, boolean cellHasFocus) 
 	{
 		TaGlInfoProvider sum = (TaGlInfoProvider)value;
-		
+
         if (isSelected) 
         {
             setBackground(list.getSelectionBackground());
@@ -71,78 +67,79 @@ public class TaGlComboBoxRenderer extends JLabel implements ListCellRenderer, Po
 	@Override
 	public void popupMenuCanceled(PopupMenuEvent arg0) 
 	{
-		SetDimensionsCollapsed();
 		onDropDown = false;
 	}
 
 	@Override
 	public void popupMenuWillBecomeInvisible(PopupMenuEvent arg0) 
 	{
-		SetDimensionsCollapsed();
 		onDropDown = false;
 	}
 
 	@Override
 	public void popupMenuWillBecomeVisible(PopupMenuEvent arg0) 
 	{
-		SetDimensionsExpanded();
+		SetPopUpSize((JComboBox)arg0.getSource());
 		onDropDown = true;
 	}
 	
-	private Dimension CalculateDropDownSize()
+	private Dimension CalcItemLength(JComboBox cBox)
 	{
 		int displayedItms = 5;
 		int maxStringLen = 0;
+		Graphics cBoxGfx = null;
+		FontMetrics fontMetrics = null;
 		
-		if(fontMetrics == null)
-			fontMetrics = getGraphics().getFontMetrics(getFont());
-		
-		for(int i = 0; i < caller.getItemCount(); i++)
+		cBoxGfx = cBox.getGraphics();
+		if(cBoxGfx != null)
 		{
-			TaGlInfoProvider itm = (TaGlInfoProvider)caller.getItemAt(i);
-			int itmStrLen = fontMetrics.stringWidth(itm.GetSummaryInfo());
-			if(itmStrLen > maxStringLen)
-				maxStringLen = itmStrLen;
-		}
+			fontMetrics = cBoxGfx.getFontMetrics(cBox.getFont());
 		
-		if(caller.getItemCount() < displayedItms)
-			displayedItms = caller.getItemCount();
-
-		this.setPreferredSize(new Dimension(maxStringLen, fontMetrics.getHeight()));
-		//this.setSize(new Dimension(maxStringLen, fontMetrics.getHeight()/2));
-		return new Dimension(maxStringLen + 20, fontMetrics.getHeight()*displayedItms/2);
-	}
-
-	private void SetDimensionsCollapsed()
-	{	
-		setHorizontalAlignment(CENTER);
+			for(int i = 0; i < cBox.getItemCount(); i++)
+			{
+				TaGlInfoProvider itm = (TaGlInfoProvider)cBox.getItemAt(i);
+				int itmStrLen = fontMetrics.stringWidth(itm.GetSummaryInfo());
+				if(itmStrLen > maxStringLen)
+					maxStringLen = itmStrLen;
+			}
+			
+			if(cBox.getItemCount() < displayedItms)
+				displayedItms = cBox.getItemCount();
+	
+			return new Dimension(maxStringLen, fontMetrics.getHeight()*(displayedItms + 1));
+		}
+		else
+		{
+			return new Dimension(0, 0);
+		}
 	}
 	
-	private void SetDimensionsExpanded()
+	private void SetPopUpSize(JComboBox cBox)
 	{
-        Object comp = caller.getUI().getAccessibleChild(caller, 0); 
+        Object comp = cBox.getUI().getAccessibleChild(cBox, 0); 
         if (!(comp instanceof JPopupMenu)) 
         { 
             return; 
         } 
         
-		setHorizontalAlignment(LEFT);
-        
         JPopupMenu popup = (JPopupMenu) comp; 
         JScrollPane scrollPane = (JScrollPane) popup.getComponent(0); 
-        Dimension size = CalculateDropDownSize();
-
+        Dimension size = CalcItemLength(cBox);
+        
         //popup.setSize(size);
         //popup.setPreferredSize(size);
-        //popup.setAutoscrolls(true);
-        
+        //popup.setMaximumSize(size);
         //popup.revalidate();
         
+        //this.setPreferredSize(size);
+        //this.setMaximumSize(size);
+        //this.revalidate();
+        
+        scrollPane.setHorizontalScrollBar(new JScrollBar(JScrollBar.HORIZONTAL)); 
+        scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);     
         //scrollPane.setSize(size);
-        scrollPane.setPreferredSize(size); 
-        //scrollPane.setAutoscrolls(true);
-        
-        scrollPane.revalidate();
-        //popup.revalidate();
-	}
+        scrollPane.setPreferredSize(size);
+        scrollPane.setMaximumSize(size);
+        //scrollPane.revalidate();
+	}  	
 }
